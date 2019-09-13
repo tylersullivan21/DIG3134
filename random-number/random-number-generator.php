@@ -14,10 +14,10 @@
 $randomNumber = rand(1,100);
 
 if($randomNumber > 50){
-    echo "<p style='color: red;'$randomNumber>";
+    echo "<p style='color: red;'>$randomNumber</p>";
 }
 else{
-    echo "<p style='color: blue;'$randomNumber>";
+    echo "<p style='color: blue;'>$randomNumber</p>";
 }
 
 ?>
