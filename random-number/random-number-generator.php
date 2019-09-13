@@ -11,7 +11,13 @@
 4) Within the logic use inline styling to change color of text.
 */
 
+$randomNumber = rand(1,100);
 
-
+if($randomNumber > 50){
+    echo "<p style='color: red;'$randomNumber>";
+}
+else{
+    echo "<p style='color: blue;'$randomNumber>";
+}
 
 ?>
