@@ -11,12 +11,16 @@
 4) Within the logic use inline styling to change color of text.
 */
 
-$test_array = array("Tyler", 20, "Male");
+$profile["first_name"] = "Bob";
+$profile["age"] = 22;
+$profile["email"] = "bob@gmail.com";
 
-echo $test_array[0];
+
+printf($profile["email"]);
 echo "<br>";
-echo $test_array[1];
+printf($profile["age"]);
 echo "<br>";
-echo $test_array[2];
+printf($profile["first_name"]);
+echo "<br>";
 
 ?>
