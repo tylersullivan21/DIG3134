@@ -13,6 +13,10 @@
 
 $test_array = array("Tyler", 20, "Male");
 
-echo $test_array[0]
+echo $test_array[0];
+echo "<br>";
+echo $test_array[1];
+echo "<br>";
+echo $test_array[2];
 
 ?>
