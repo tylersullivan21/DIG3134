@@ -54,6 +54,7 @@ html {
       "footer"
   }
 
+ 
 
   .main-content{
       grid-area: main-content;
@@ -66,10 +67,18 @@ html {
   }
 .hero-img{
     grid-area: hero-img;
-    background-image: url("https://s3.envato.com/files/169155966/01_preview10.jpg?irgwc=1&clickid=38R1…iapartner&utm_medium=affiliate&utm_source=impact_radius&mp=YieldKit%20GmbH");
+    background-image: url("https://beerdeluxe.com.au/albury/wp-content/uploads/sites/3/2017/05/hero-placeholder.png");
     background-size: contain;
     background-attachment: fixed;
     background-position: center center;
+    position: relative;
+}
+
+.contact-header{
+  position: absolute;
+  top: 30%;
+  left: 42%;
+  font-size: 40px;
 }
 
 .hero-img img{
