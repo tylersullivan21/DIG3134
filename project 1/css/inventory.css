@@ -67,7 +67,9 @@ html {
 
   .card-section{
       grid-area: card-section;
+      display: grid;
   }
+  
 
   .footer{
       grid-area: footer;
