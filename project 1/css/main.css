@@ -55,7 +55,7 @@ html {
   
   .wrapper{
       display:grid;
-      grid-template-rows: repeat(2, 1fr);
+      grid-template-rows: repeat(2, auto);
       grid-template-areas: 
       "main-content"
       "footer"
@@ -291,5 +291,15 @@ width: 100%;
 }
 
   .footer{
-      grid-area: footer;
+  grid-area: footer;
+  height: 100px;
+  width: 100%;
+  background: #E66760;
+  display: grid;
+  }
+  .footer-text{
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+      margin: auto;
   }

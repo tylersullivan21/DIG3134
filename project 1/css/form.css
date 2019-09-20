@@ -48,7 +48,7 @@ html {
 
   .wrapper{
       display:grid;
-      grid-template-rows: repeat(2, 1fr);
+      grid-template-rows: repeat(2, auto);
       grid-template-areas:
       "main-content"
       "footer"
@@ -132,6 +132,16 @@ input[type=button] {
   font-weight: 400;
 }
 
-  .footer{
-      grid-area: footer;
+.footer{
+  grid-area: footer;
+  height: 100px;
+  width: 100%;
+  background: #E66760;
+  display: grid;
+  }
+  .footer-text{
+      justify-content: center;
+      align-content: center;
+      text-align: center;
+      margin: auto;
   }
