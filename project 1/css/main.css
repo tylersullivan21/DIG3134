@@ -104,13 +104,13 @@ html {
 
 .slide-add-on{
     position: relative;
-    animation-name: slideIn;
+    animation-name: slideInRight;
     animation-duration: 2s;
     animation-timing-function: ease-in-out;
     
 }
 
-@keyframes slideIn{
+@keyframes slideInRight{
     from {left: -100%;}
     to {left: 0;}
 }
@@ -230,10 +230,7 @@ width: 100%;
     animation-duration: 2s;
     animation-timing-function: ease;
 }
-@keyframes slideTop{
-    from{top:-1000%;}
-    to{top: 0;}
-}
+
 
 .button-centered{
     position: relative;
@@ -242,10 +239,7 @@ width: 100%;
     animation-timing-function: ease; 
 }
 
-@keyframes slideBottom{
-    from{bottom: -1000%;}
-    to{bottom: 0;}
-}
+
 
 .right-list-item{
     grid-area: right-list-item;
@@ -307,4 +301,5 @@ figcaption{
       align-content: center;
       text-align: center;
       margin: auto;
+      color: white;
   }
