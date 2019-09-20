@@ -58,7 +58,7 @@ html {
       grid-template-rows: repeat(2, auto);
       grid-template-areas: 
       "main-content"
-      "footer"
+      "footer";
   }
 
 
@@ -270,7 +270,12 @@ width: 100%;
 }
 .icon-img img{
     border-radius: 400px;
+    max-width: 250px;
     
+}
+figcaption{
+    font-size: 10px;
+    padding: 12px;
 }
 .icon-img{
     padding-bottom: 2rem;
