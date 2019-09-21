@@ -90,9 +90,9 @@ html {
     display: grid;
     grid-gap: 30px;
     padding: 0 20%;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(4, auto);
     grid-template-areas: 
-    "card1 card2 card3";
+    "card1 card2 card3 card4";
   }
 /*****************************************************/
           /*STYLES FOR EACH CARD IN SHOE CARDS*/
@@ -146,9 +146,46 @@ padding: .5rem;
     width: 100%;
   }
 
-  .price{
-    font-weight: bold;
+  .card3{
+    grid-area: card3;
+    border: 2px solid #e7e7e7;
+    border-radius: 4px;
+    padding: .5rem;
+  }
+
+  .card3-text {
     padding: 5px;
+  }
+  .card3 h3{
+    text-align: center;
+  }
+.card3 h3, .card3 p{
+  padding: 5px;
+}
+
+  .card3 img{
+    width: 100%;
+  }
+
+  .card4{
+    grid-area: card4;
+    border: 2px solid #e7e7e7;
+    border-radius: 4px;
+    padding: .5rem;
+  }
+
+  .card4-text {
+    padding: 5px;
+  }
+  .card4 h3{
+    text-align: center;
+  }
+.card4 h3, .card4 p{
+  padding: 5px;
+}
+
+  .card4 img{
+    width: 100%;
   }
 
   /*****************************************************/
