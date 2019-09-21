@@ -83,13 +83,16 @@ html {
   }
   .shoe-head{
     grid-area: shoe-head;
+     padding: 0 20%;
   }
   .shoe-cards{
     grid-area: shoe-cards;
     display: grid;
-    grid-template-columns: repeat(3, 200px);
+    grid-gap: 30px;
+    padding: 0 20%;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-template-areas: 
-    "card1 card2 card3;"
+    "card1 card2 card3";
   }
 /*****************************************************/
           /*STYLES FOR EACH CARD IN SHOE CARDS*/
@@ -97,11 +100,12 @@ html {
 
   .card1{
     display: grid;
+    grid-area: card1;
     border: 2px solid #e7e7e7;
 border-radius: 4px;
 padding: .5rem;
   }
-  .card1-text{
+  .card1-text {
     padding: 5px;
   }
   .card1 h3{
@@ -119,6 +123,38 @@ padding: .5rem;
     font-weight: bold;
     padding: 5px;
   }
+
+  .card2{
+    display: grid;
+    grid-area: card2;
+    border: 2px solid #e7e7e7;
+border-radius: 4px;
+padding: .5rem;
+  }
+
+  .card2-text {
+    padding: 5px;
+  }
+  .card2 h3{
+    text-align: center;
+  }
+.card2 h3, .card2 p{
+  padding: 5px;
+}
+
+  .card2 img{
+    width: 100%;
+  }
+
+  .price{
+    font-weight: bold;
+    padding: 5px;
+  }
+
+  /*****************************************************/
+          /*SHOE CARDS ENDS HERE*/
+/****************************************************/
+
 
   .camera-head{
     grid-area: camera-head;
