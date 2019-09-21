@@ -81,6 +81,9 @@ html {
   .hero-img{
     grid-area: hero-img;
   }
+  .hero-img img{
+    width:100%;
+  }
 
   .shoe-section, .camera-section, .clothes-section{
     margin: 3% 0;
