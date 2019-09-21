@@ -81,6 +81,14 @@ html {
   .hero-img{
     grid-area: hero-img;
   }
+
+  .shoe-section, .camera-section{
+    margin: 5% 0;
+  }
+  .shoe-section h1, .camera-section h1{
+    font-size: 32px;
+    margin: 2% 0;
+  }
   .shoe-head{
     grid-area: shoe-head;
      padding: 0 20%;
@@ -193,9 +201,10 @@ padding: .5rem;
 /****************************************************/
 
 
+
   .camera-head{
     grid-area: camera-head;
-
+padding: 0 20%;
   }
   .camera-cards{
     grid-area: camera-cards;
