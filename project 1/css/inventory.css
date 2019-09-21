@@ -15,13 +15,13 @@ body {
 }
 
 .nav-wrapper {
-  background-color: #E66760;
+  background-color: #232f3e;
 }
 
 .navbar {
   width: 100%;
   height: 100px;
-  background-color: #E66760;
+  background-color: #232f3e;
   padding-left: 50px;
   padding-right: 50px;
   display: flex;
@@ -135,7 +135,7 @@ input[type=button] {
   grid-area: footer;
   height: 100px;
   width: 100%;
-  background: #E66760;
+  background: #232f3e;
   display: grid;
 }
 

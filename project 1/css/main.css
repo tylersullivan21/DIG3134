@@ -1,3 +1,5 @@
+$head_foot_color: #61B7D4;
+
 html {
     box-sizing: border-box;
   }
@@ -233,8 +235,8 @@ width: 100%;
 }
 
 .icon-heading a{
-    text-decoration: none;
-    color: #232f3e;
+    
+    color: #61B7D4;
 }
 .icon-description{
     font-size: 1.125rem;
