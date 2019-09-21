@@ -195,9 +195,16 @@ padding: .5rem;
 
   .camera-head{
     grid-area: camera-head;
+
   }
   .camera-cards{
     grid-area: camera-cards;
+    display: grid;
+    grid-gap: 30px;
+    padding: 0 20%;
+    grid-template-columns: repeat(4, auto);
+    grid-template-areas: 
+    "card1 card2 card3 card4";
   }
 
   .clothes-head{
