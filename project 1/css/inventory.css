@@ -82,10 +82,10 @@ html {
     grid-area: hero-img;
   }
 
-  .shoe-section, .camera-section{
+  .shoe-section, .camera-section, .clothes-section{
     margin: 5% 0;
   }
-  .shoe-section h1, .camera-section h1{
+  .shoe-section h1, .camera-section h1, .clothes-section h1{
     font-size: 32px;
     margin: 2% 0;
   }
@@ -218,9 +218,16 @@ padding: 0 20%;
 
   .clothes-head{
     grid-area: clothes-head;
+    padding: 0 20%;
   }
   .clothes-cards{
     grid-auto-columns: clothes-cards;
+    display: grid;
+    grid-gap: 30px;
+    padding: 0 20%;
+    grid-template-columns: repeat(4, auto);
+    grid-template-areas: 
+    "card1 card2 card3 card4";
   }
 
 .footer{
