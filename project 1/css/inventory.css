@@ -65,10 +65,73 @@ html {
   .main-content{
       grid-area: main-content;
       display: grid;
-      grid-template-rows: 500px;
+      grid-template-rows: repeat(7,auto);
       grid-template-areas:
+      "hero-img"
+      "shoe-head"
+      "shoe-cards"
+      "camera-head"
+      "camera-cards"
+      "clothes-head"
+      "clothes-cards";
     
 
+  }
+
+  .hero-img{
+    grid-area: hero-img;
+  }
+  .shoe-head{
+    grid-area: shoe-head;
+  }
+  .shoe-cards{
+    grid-area: shoe-cards;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-areas: 
+    "card1 card2 card3;"
+  }
+/*****************************************************/
+          /*STYLES FOR EACH CARD IN SHOE CARDS*/
+/****************************************************/
+
+  .card1{
+    display: grid;
+    border: 2px solid #e7e7e7;
+border-radius: 4px;
+padding: .5rem;
+  }
+  .card1-text{
+    padding: 5px;
+  }
+  .card1 h3{
+    text-align: center;
+  }
+.card1 h3, .card1 p{
+  padding: 5px;
+}
+
+  .card1 img{
+    width: 100%;
+  }
+
+  .price{
+    font-weight: bold;
+    padding: 5px;
+  }
+
+  .camera-head{
+    grid-area: camera-head;
+  }
+  .camera-cards{
+    grid-area: camera-cards;
+  }
+
+  .clothes-head{
+    grid-area: clothes-head;
+  }
+  .clothes-cards{
+    grid-auto-columns: clothes-cards;
   }
 
 .footer{
