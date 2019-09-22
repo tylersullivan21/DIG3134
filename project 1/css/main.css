@@ -72,10 +72,7 @@ html {
   }
 .hero-img{
     grid-area: hero-img;
-    background-image: url("https://beerdeluxe.com.au/albury/wp-content/uploads/sites/3/2017/05/hero-placeholder.png");
-    background-size: contain;
-    background-attachment: fixed;
-    background-position: center center;  
+ 
 }
 
 .hero-img img{
