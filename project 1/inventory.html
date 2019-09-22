@@ -185,20 +185,7 @@
         <!--CARD 4 ENDS HERE-->
 
 
-        <form class="profile-form" action="profile.php" method="post">
-            <div class="intro">
-              <h1>Let us build a shoe profile</h1>
-              <h2>Send us a message!</h2>
-            </div>
-            <label  for="text">Name</label>
-            <input class="name" type="text" name="name" value="" tabindex='2'
-            <label  for="text">What is your favorite shoe brand?</label>
-            <input class="shoe-brand" type="text" name="shoe-brand" value="" tabindex='3'>
-            <label  for="text">What is your shoe size in inches?</label>
-            <input class="shoe-size" type="text" name="shoe-size" value="" tabindex='4'>
-            <input type="submit" name="submit-button" value="Submit">
-          
-          </form>
+     
         </section>
         </main>
 
@@ -209,6 +196,29 @@
 
 
         <footer class="footer">
+
+<div class="footer-form-text">
+    <h2 class="footer-heading">Lets build a profile for you.</h2>
+    <p>Let us a know what your fave shoe brand and shoe size in inches</p>
+</div>
+<form method="post" action="profile.php" method="POST" class="profile-form">
+    <div class="form-field">
+      <label for="full-name">Full Name</label>
+      <input type="text" name="full-name" id="full-name" placeholder="Joe Bloggs" required />
+    </div>
+    <div class="form-field">
+      <label for="shoe-size">Shoe Size(in)</label>
+      <input type="text" name="email-input" id="shoe-size" placeholder="10" required />
+    </div>
+    <div class="form-field">
+      <label for="shirt-size">Shirt Size</label>
+      <input type="text" name="shirt-size" id="shirt-size" required />
+    </div>
+    <div class="form-field">
+      <label for=""></label>
+      <input type="submit" value="Submit" />
+    </div>
+  </form>
             <p class="footer-text">Copyright of Tyler Sullivan 2019</p>
         </footer>
 
