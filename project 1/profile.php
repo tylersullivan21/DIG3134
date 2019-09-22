@@ -1,17 +1,20 @@
 <?php
 
-$name = $_POST["full-name"];
-$shoe_brand = $_POST["shoe-size"];
-$shoe_size = $_POST["shirt-size"];
+$name = $_POST["name"];
+$shoe_brand = $_POST["shoe-brand"];
+$camera_brand = $_POST["camera-brand"];
+$clothes_brand = $_POST["clothes-brand"];
 
 
-$profile = array($name, $shoe_brand, $shoe_size);
+$profile = array($name, $shoe_brand, $camera_brand, $clothes_brand);
 print_r($profile);
 echo "<br>";
 
 echo "<br>";
 shuffle($profile);
-echo  count($profile);
-print_r($profile);
 
+echo "<br>";
+print_r($profile);
+echo "<br>";
+echo  count($profile);
 ?>

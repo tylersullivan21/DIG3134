@@ -109,7 +109,9 @@ html {
 /*****************************************************/
           /*STYLES FOR EACH CARD IN SHOE CARDS*/
 /****************************************************/
-
+figcaption{
+  font-size: 9px;
+}
   .card1{
     display: grid;
     grid-area: card1;
@@ -236,11 +238,7 @@ padding: 0 20%;
 
 .footer{
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2,1fr);
-  grid-template-areas: 
-  "footer-form-text . profile-form"
-  ". footer-text .";
+height: 80px;
   grid-area: footer;
 
   width: 100%;
@@ -304,8 +302,7 @@ padding: 0 20%;
     }
     
   .footer-text{
-    grid-column: 2/3;
-    grid-row: 2;
+
       margin: auto;
       color: white;
   }
