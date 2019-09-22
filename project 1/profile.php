@@ -1,8 +1,8 @@
 <?php
 
-$name = $_POST["name"];
-$shoe_brand = $_POST["shoe-brand"];
-$shoe_size = $_POST["shoe-size"];
+$name = $_POST["full-name"];
+$shoe_brand = $_POST["shoe-size"];
+$shoe_size = $_POST["shirt-size"];
 
 
 $profile = array($name, $shoe_brand, $shoe_size);
