@@ -10,6 +10,14 @@ $user_entered_data = array(
     "zip-code" => $_POST['zip-code'],
     "state" => $_POST['state'],
     );
+
+if(preg_match("/[a-z]/",$user_entered_data['username'])){
+    echo 'The regex for the username has been met';
+}
+else{
+    echo 'the regex is invalid';
+}
+
 print_r ($user_entered_data);
 
 ?>
