@@ -11,6 +11,9 @@ $user_entered_data = array(
     "state" => $_POST['state'],
     );
 
+    /************************** */
+    /*THE REGEX FOR USER NAME */
+    /************************* */
 if(preg_match("/[a-z]/",$user_entered_data['username'])){
     echo 'The regex for the username has been met';
 }
