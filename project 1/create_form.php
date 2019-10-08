@@ -41,6 +41,19 @@ else{
 }
 
 
+    /************************** */
+    /*THE REGEX FOR STATE */
+    /************************* */
+
+if(preg_match("/^[A-Z]{2}$/" , $user_entered_data['state'])){
+    echo 'The state regex passed';
+}
+
+else{
+    echo 'The regex for state failed';
+}
+
+
 
     /*
 validateUsername($user_entered_data['username']);
