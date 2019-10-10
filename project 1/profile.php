@@ -1,5 +1,4 @@
 <?php
-
 $name = $_POST["name"];
 $shoe_brand = $_POST["shoe-brand"];
 $camera_brand = $_POST["camera-brand"];

@@ -1,5 +1,6 @@
 <?php
 
+phpinfo();
 $user_entered_data = array(
 
     "username" => $_POST['username'],
