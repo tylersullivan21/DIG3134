@@ -1,4 +1,7 @@
 <?php
+header("refresh:5; ./index.html");
+echo $user_entered_data['username'];
+die();
 
 $user_entered_data = array(
 
