@@ -6,7 +6,7 @@ $user_entered_data = array(
     "password" => $_POST['password'],
     "phone" => $_POST['phone'],
     "email" => $_POST['email'],
-    "address-line1" => $_POST['address-line1'],
+    "street" => $_POST['street'],
     "city" => $_POST['city'],
     "zip-code" => $_POST['zip-code'],
     "state" => $_POST['state'],
@@ -30,18 +30,19 @@ else{
     echo 'the regex is invalid';
     }
  */
-function validateProfile(){
+
    
     /************************** */
     /*THE REGEX FOR ZIP CODE */
     /************************* */
 if(preg_match("/^\d{5}$/", $user_entered_data['zip-code'])){
-
     echo 'The regex for zip code has been met';
+    echo "</br>";
 }
 
 else{
     echo 'The regex for zip code failed';
+    echo "</br>";
 }
 
     /************************** */
@@ -50,31 +51,39 @@ else{
 
 if(preg_match("/^[A-Z]{2}$/" , $user_entered_data['state'])){
     echo 'The state regex passed';
+    echo "</br>";
 }
 
 else{
     echo 'The regex for state failed';
+    echo "</br>";
 }
-if(pregmatch("/^\d{1}.*[a-zA-Z]{1}$/" , $user_entered_data['address-line1'])){
+
+if(preg_match("/^\d{1}.*[a-zA-Z]{1}$/" , $user_entered_data['street'])){
     echo 'The regex for address passed';
+    echo "</br>";
 }
 else {
     echo 'the regex for address failed';
+    echo "</br>";
 }
 
     /************************** */
     /*THE REGEX FOR PHONE*/
     /************************* */
 
-    if(preg_match("/^\d{10}$/" , $user_entered_data['state'])){
+    if(preg_match("/^\d{10}$/" , $user_entered_data['phone'])){
         echo 'the phone number is clean';
+        echo "</br>";
     }
     
     else{
-        echo 'The regex for state failed';
+        echo 'The regex forphone number failed';
+        echo "</br>";
     }
 
-    }
+
+
 
 
     /*
