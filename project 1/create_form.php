@@ -1,6 +1,6 @@
 <?php
 header("refresh:5; ./index.html");
-echo $user_entered_data['username'];
+echo "You have sucessfully created an account, " . $_POST['username'] . " You will be directed to the home page in 5 seconds";
 die();
 
 $user_entered_data = array(
