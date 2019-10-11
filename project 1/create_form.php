@@ -1,3 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="" method="POST">
+    
+    <div class="form-field">
+        <label for="username">User Name:</label>
+        <input type="text" name="username" id="username" placeholder="UserName" required />
+      </div>
+
+      <div class="form-field">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Password" required />
+      </div>
+
+      <div class="form-field">
+        <label for="phone">Phone Number</label>
+        <input type="tel" name="phone" id="phone" placeholder="Phone Number" required />
+      </div>
+
+      <div class="form-field">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Email" required />
+      </div>
+
+      <div class="form-field">
+        <label for="street">Street Address</label>
+        <input type="text" name="street" id="street" placeholder="Street Address" required />
+      </div>
+
+      <div class="form-field">
+        <label for="city">City</label>
+        <input type="text" name="city" id="city" placeholder="City" required />
+      </div>
+
+      <div class="form-field">
+        <label for="zip-code">Zip Code</label>
+        <input type="text" name="zip-code" id="zip-code" placeholder="Zip Code" required />
+      </div>
+
+      <div class="form-field">
+        <label for="state">State</label>
+        <input type="text" name="state" id="state" placeholder="State" required />
+      </div>
+    
+
+
+      <input type="submit" value="Submit" name="submit">
+      
+    </form>
+</body>
+</html>
 <?php
 
 
@@ -17,6 +76,7 @@ else{
  */
 
  function redirectOnSuccess (){
+     //TODO :: MAKE COOKIES
     header("refresh:5; ./index.html");
     echo "You have sucessfully created an account, " . $_POST['username'] . " You will be directed to the home page in 5 seconds";
     die();
@@ -104,10 +164,18 @@ else {
     if($isValidAddress === true && $isValidPhone === true && $isValidState === true && $isValidZip === true) {
         redirectOnSuccess();
     }
+    else{
+
+
+    }
 
 }
 
-validateInput();
+if(isset($_POST['submit']))
+{
+
+   validateInput();
+} 
 
     /*
 validateUsername($user_entered_data['username']);
