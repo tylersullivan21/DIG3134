@@ -1,6 +1,5 @@
 <?php
 
-phpinfo();
 $user_entered_data = array(
 
     "username" => $_POST['username'],
@@ -21,7 +20,7 @@ $user_entered_data = array(
     /*THE REGEX FOR USER NAME */
     /************************* */
 
-    function validateProfile(){
+
 //user name can be anything dont need validation, can take it out
 /*
 if(preg_match("/[a-zA-Z]/",$user_entered_data['username'])){
@@ -30,9 +29,9 @@ if(preg_match("/[a-zA-Z]/",$user_entered_data['username'])){
 else{
     echo 'the regex is invalid';
     }
-
-
-    */
+ */
+function validateProfile(){
+   
     /************************** */
     /*THE REGEX FOR ZIP CODE */
     /************************* */
@@ -45,7 +44,6 @@ else{
     echo 'The regex for zip code failed';
 }
 
-
     /************************** */
     /*THE REGEX FOR STATE */
     /************************* */
@@ -57,7 +55,12 @@ if(preg_match("/^[A-Z]{2}$/" , $user_entered_data['state'])){
 else{
     echo 'The regex for state failed';
 }
-
+if(pregmatch("/^\d{1}.*[a-zA-Z]{1}$/" , $user_entered_data['address-line1'])){
+    echo 'The regex for address passed';
+}
+else {
+    echo 'the regex for address failed';
+}
 
     /************************** */
     /*THE REGEX FOR PHONE*/
