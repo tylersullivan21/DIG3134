@@ -13,6 +13,10 @@ $user_entered_data = array(
     "state" => $_POST['state'],
     );
 
+    //this code cleans out the user input for phone number
+    $user_entered_data['phone'] = preg_replace("/[- \(\)]/", "", $user_entered_data['phone']);
+
+
     /************************** */
     /*THE REGEX FOR USER NAME */
     /************************* */
@@ -27,7 +31,7 @@ else{
     echo 'the regex is invalid';
     }
 
-    
+
     */
     /************************** */
     /*THE REGEX FOR ZIP CODE */
@@ -59,8 +63,8 @@ else{
     /*THE REGEX FOR PHONE*/
     /************************* */
 
-    if(preg_match("/^\d{10}$/" , $user_entered_data['state']) && preg_replace()){
-        echo 'The state regex passed';
+    if(preg_match("/^\d{10}$/" , $user_entered_data['state'])){
+        echo 'the phone number is clean';
     }
     
     else{
