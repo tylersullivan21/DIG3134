@@ -165,9 +165,15 @@ else {
     //this conditional checks if all flag variables are true or not, when true it will run the success redirect logic.
     if($isValidAddress === true && $isValidPhone === true && $isValidState === true && $isValidZip === true) {
         redirectOnSuccess();
+        setcookie("username_cookie", "dig3134", time() + 5000, "/");
+        setcookie("password_cookie", "dig3134pass", time() + 5000, "/");
+        setcookie("login_state", "true");
+        echo $_COOKIE["login_state"];
+        echo $_COOKIE["username_cookie"];
+        echo $_COOKIE["password_cookie"];
     }
     else{
-
+echo 'your values are wrong';
 
     }
 
