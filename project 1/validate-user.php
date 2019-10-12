@@ -1,7 +1,8 @@
 <?php
 
 if (isset($_COOKIE['username'])) {
-    echo 'username cookie is set';
+    setcookie("username", "", time()-3600);
+    echo $_COOKIE['username'];
   }
 
   else{
