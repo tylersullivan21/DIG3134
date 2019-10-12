@@ -78,6 +78,8 @@ else{
  function redirectOnSuccess (){
      //TODO :: MAKE COOKIES
     header("refresh:5; ./index.html");
+    setcookie("username_cookie", "dig3134", time() + 5000, "/");
+    setcookie("password_cookie", "dig3134pass", time() + 5000, "/");
     echo "You have sucessfully created an account, " . $_POST['username'] . " You will be directed to the home page in 5 seconds";
     die();
  }
