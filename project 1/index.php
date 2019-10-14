@@ -20,31 +20,43 @@
                     <li class="nav-item"><a href="inventory.html">Inventory</a></li>
                     <li class="nav-item"><a href="contact.html">Contact</a></li>
                 </ul>
-                   
-                <form class="input-form" action="validate-user.php" method="post">
-                
-                <div class="form-field">
-                    <label for="username">Username</label>
-                    <input type="text" name="username" id="shoe-brand" placeholder="Username" required />
-                  </div>
+                <?php
 
-                  <div class="form-field">
-                    <label for="password">Password</label>
-                    <input type="password" name="password" id="shoe-brand" placeholder="Password" required />
-                  </div>
-                  <div class="form-field">
-                    <label for="submit"></label>
-                    <input type="submit" value="Submit" name="submit" />
-                  </div>
+                        if (isset($_COOKIE['username_cookie']) &&  isset($_COOKIE['password_cookie']) && $_COOKIE['login_state'] === 'true') {
+                            echo 'You are already signed in hehehe';
 
-                <div class="create-account-content">
-                    <p>Don't have an account?</p>
-                    <label for="submit"></label>
-                    <input type="submit" value="Create Account" name="submit" />
-                </div>
+                            }
+
+                        else{
+                             echo ' <form class="input-form" action="validate-user.php" method="post">
                 
-                 </nav>
-             </form>
+                             <div class="form-field">
+                                 <label for="username">Username</label>
+                                 <input type="text" name="username" id="shoe-brand" placeholder="Username" required />
+                               </div>
+             
+                               <div class="form-field">
+                                 <label for="password">Password</label>
+                                 <input type="password" name="password" id="shoe-brand" placeholder="Password" required />
+                               </div>
+                               <div class="form-field">
+                                 <label for="submit"></label>
+                                 <input type="submit" value="Submit" name="submit" />
+                               </div>
+             
+                             <div class="create-account-content">
+                                 <p>Dont have an account?</p>
+                                 <label for="submit"></label>
+                                 <input type="submit" value="Create Account" name="submit" />
+                             </div>
+                              </nav>
+             
+                           
+             
+                          </form>';
+                            }
+  ?>
+               
                 </div>
                  <div class="wrapper">
         <main class="main-content">

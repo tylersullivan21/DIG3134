@@ -78,9 +78,10 @@ else{
 
  function redirectOnSuccess (){
      //TODO :: MAKE COOKIES
-    header("refresh:5; ./index.html");
-    setcookie("username_cookie", "dig3134", time() + 5000, "/");
-    setcookie("password_cookie", "dig3134pass", time() + 5000, "/");
+    header("refresh:5; ./index.php");
+    setcookie("username_cookie", "dig3134", time() + 20, "/");
+    setcookie("password_cookie", "dig3134pass", time() + 20, "/");
+    setcookie("login_state", "true", time() + 20);
     echo "You have sucessfully created an account, " . $_POST['username'] . " You will be directed to the home page in 5 seconds";
     die();
  }
@@ -166,9 +167,10 @@ else {
     //this conditional checks if all flag variables are true or not, when true it will run the success redirect logic.
     if($isValidAddress === true && $isValidPhone === true && $isValidState === true && $isValidZip === true) {
         redirectOnSuccess();
-        setcookie("username_cookie", "dig3134", time() + 50000, "/");
-        setcookie("password_cookie", "dig3134pass", time() + 50000, "/");
-        setcookie("login_state", "true");
+        setcookie("username_cookie", "dig3134", time() + 20, "/");
+        setcookie("password_cookie", "dig3134pass", time() + 20, "/");
+        setcookie("login_state", "true", time() + 20);
+        header("refresh:3; ./index.php");
         echo $_COOKIE["login_state"];
         echo $_COOKIE["username_cookie"];
         echo $_COOKIE["password_cookie"];
