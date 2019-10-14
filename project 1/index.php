@@ -44,20 +44,23 @@
                                  <input type="submit" value="Submit" name="submit" />
                                </div>
              
-                             <div class="create-account-content">
-                                 <p>Dont have an account?</p>
-                                 <label for="submit"></label>
-                                 <input type="submit" value="Create Account" name="submit" />
-                             </div>
+                            
                               </nav>
              
-                           
+                        
              
-                          </form>';
+                          </form>
+                          <form action="create_form.php" class="create-account-content">
+                          <p>Dont have an account?</p>
+                          <label for="submit"></label>
+                          <input type="submit" value="Create Account" name="submit" />
+                 </form >';
                             }
   ?>
                
                 </div>
+
+                        
                  <div class="wrapper">
         <main class="main-content">
 
