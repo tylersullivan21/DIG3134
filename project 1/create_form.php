@@ -24,7 +24,10 @@
 
     <div class="main-content">
     <form class="form-grid" action="" method="POST">
-
+<div class="intro">
+    <h1>Create An Account</h1>
+    <p>Feel free to create account to get a unique experience</p>
+</div>
     <div id="username" class="form-field">
         <label for="username">User Name:</label>
         <input type="text" name="username" id="username" placeholder="UserName" required />
