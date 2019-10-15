@@ -33,7 +33,6 @@ if($_POST['username'] === 'dig3134' &&  $_POST['password']=== 'dig3134pass'){
     echo $_COOKIE["login_state"];
     echo $_COOKIE["username_cookie"];
     echo $_COOKIE["password_cookie"];
-
     echo $_COOKIE["username_cookie"];
     echo $_COOKIE["password_cookie"];
     echo 'congrats! you got the right username';
@@ -42,7 +41,7 @@ if($_POST['username'] === 'dig3134' &&  $_POST['password']=== 'dig3134pass'){
 }
 
 else{
-    echo 'your password is wayyy off';
+    echo '';
     echo "<br>";
 }
 
