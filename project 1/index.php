@@ -57,8 +57,9 @@
                  </form >';
                             }
   ?>
+  </nav>
                
-                </div>
+ </div>
 
                         
                  <div class="wrapper">

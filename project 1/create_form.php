@@ -5,57 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="css/form.css">
+   
+    <link rel="stylesheet" href="css/create_account.css">
 </head>
 <body>
-    
-    <form action="" method="POST">
-    
-    <div class="form-field">
+  
+<div class="nav-wrapper">
+            <nav class="navbar">
+                   
+                   <ul class="nav-links">
+                    <li class="nav-item"><a href="index.html">Home</a></li>
+                    <li class="nav-item"><a href="inventory.html">Inventory</a></li>
+                    <li class="nav-item"><a href="contact.html">Contact</a></li>
+                </ul>
+  </nav>
+               
+ </div>
+
+    <div class="main-content">
+    <form class="form-grid" action="" method="POST">
+
+    <div id="username" class="form-field">
         <label for="username">User Name:</label>
         <input type="text" name="username" id="username" placeholder="UserName" required />
       </div>
 
-      <div class="form-field">
+      <div id="password" class="form-field">
         <label for="password">Password</label>
         <input type="password" name="password" id="password" placeholder="Password" required />
       </div>
 
-      <div class="form-field">
+      <div id="phone" class="form-field">
         <label for="phone">Phone Number</label>
         <input type="tel" name="phone" id="phone" placeholder="Phone Number" required />
       </div>
 
-      <div class="form-field">
+      <div id="email" class="form-field">
         <label for="email">Email</label>
         <input type="email" name="email" id="email" placeholder="Email" required />
       </div>
 
-      <div class="form-field">
+      <div id="stree" class="form-field">
         <label for="street">Street Address</label>
         <input type="text" name="street" id="street" placeholder="Street Address" required />
       </div>
 
-      <div class="form-field">
+      <div id="city" class="form-field">
         <label for="city">City</label>
         <input type="text" name="city" id="city" placeholder="City" required />
       </div>
 
-      <div class="form-field">
+      <div id="zip" class="form-field">
         <label for="zip-code">Zip Code</label>
         <input type="text" name="zip-code" id="zip-code" placeholder="Zip Code" required />
       </div>
 
-      <div class="form-field">
+      <div id="state" class="form-field">
         <label for="state">State</label>
         <input type="text" name="state" id="state" placeholder="State" required />
       </div>
-    
-
-
-      <input type="submit" value="Submit" name="submit">
-      
+      <input id="submit" type="submit" value="Submit" name="submit"> 
     </form>
+
+    </div>
+
+    <footer class="footer">
+            <p class="footer-text">Copyright of Tyler Sullivan 2019</p>
+        </footer>
+
 </body>
 </html>
 <?php
