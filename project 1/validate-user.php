@@ -36,13 +36,13 @@ if($_POST['username'] === 'dig3134user' &&  $_POST['password']=== 'dig3134pass')
     echo $_COOKIE["username_cookie"];
     echo $_COOKIE["password_cookie"];
     echo 'congrats! you got the right username';
-    header("refresh:5; ./index.php");
+    header("refresh:1; ./index.php");
     echo "<br>";
 }
 
 else{
-    echo '';
-    echo "<br>";
+    header("refresh:1; ./index.php");
+    echo'Your value was wrong';
 }
 
 
