@@ -30,7 +30,7 @@
 
 
 <?php
-
+// USER LOGGED IN, ADD MARKUP FOR UNIQUE  VIEW
 if (isset($_COOKIE['username_cookie']) &&  isset($_COOKIE['password_cookie']) && $_COOKIE['login_state'] === 'true') {
     echo '<h4 class="signed-in-header">Hello, there'.$_COOKIE['username_cookie'] .'  </h4>
    
@@ -49,7 +49,7 @@ if (isset($_COOKIE['username_cookie']) &&  isset($_COOKIE['password_cookie']) &&
     ';
 
     }
-//no user logged in
+//no user logged in SHOW COMMON VIEW
 else {
      echo '
      <form class="input-form" action="validate-user.php" method="post">
