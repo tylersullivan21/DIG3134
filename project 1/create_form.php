@@ -28,56 +28,8 @@
     <h1>Create An Account</h1>
     <p>Feel free to create account to get a unique experience</p>
 </div>
-    <div id="username" class="form-field">
-        <label for="username">User Name:</label>
-        <input type="text" name="username" id="username" placeholder="UserName" required />
-      </div>
 
-      <div id="password" class="form-field">
-        <label for="password">Password</label>
-        <input type="password" name="password" id="password" placeholder="Password" required />
-      </div>
-
-      <div id="phone" class="form-field">
-        <label for="phone">Phone Number</label>
-        <input type="tel" name="phone" id="phone" placeholder="Phone Number" required />
-      </div>
-
-      <div id="email" class="form-field">
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="Email" required />
-      </div>
-
-      <div id="stree" class="form-field">
-        <label for="street">Street Address</label>
-        <input type="text" name="street" id="street" placeholder="Street Address" required />
-      </div>
-
-      <div id="city" class="form-field">
-        <label for="city">City</label>
-        <input type="text" name="city" id="city" placeholder="City" required />
-      </div>
-
-      <div id="zip" class="form-field">
-        <label for="zip-code">Zip Code</label>
-        <input type="text" name="zip-code" id="zip-code" placeholder="Zip Code" required />
-      </div>
-
-      <div id="state" class="form-field">
-        <label for="state">State</label>
-        <input type="text" name="state" id="state" placeholder="State" required />
-      </div>
-      <input id="submit" type="submit" value="Submit" name="submit"> 
-    </form>
-
-    </div>
-
-    <footer class="footer">
-            <p class="footer-text">Copyright of Tyler Sullivan 2019</p>
-        </footer>
-
-</body>
-</html>
+<div class="error-messages">
 <?php
 
 
@@ -215,6 +167,58 @@ validateZip($user_entered_data['zip-code']);
 print_r ($user_entered_data);
 
 ?>
+</div>
+    <div id="username" class="form-field">
+        <label for="username">User Name:</label>
+        <input type="text" name="username" id="username" placeholder="UserName" required />
+      </div>
+
+      <div id="password" class="form-field">
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Password" required />
+      </div>
+
+      <div id="phone" class="form-field">
+        <label for="phone">Phone Number</label>
+        <input type="tel" name="phone" id="phone" placeholder="Phone Number" required />
+      </div>
+
+      <div id="email" class="form-field">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Email" required />
+      </div>
+
+      <div id="stree" class="form-field">
+        <label for="street">Street Address</label>
+        <input type="text" name="street" id="street" placeholder="Street Address" required />
+      </div>
+
+      <div id="city" class="form-field">
+        <label for="city">City</label>
+        <input type="text" name="city" id="city" placeholder="City" required />
+      </div>
+
+      <div id="zip" class="form-field">
+        <label for="zip-code">Zip Code</label>
+        <input type="text" name="zip-code" id="zip-code" placeholder="Zip Code" required />
+      </div>
+
+      <div id="state" class="form-field">
+        <label for="state">State</label>
+        <input type="text" name="state" id="state" placeholder="State" required />
+      </div>
+      <input id="submit" type="submit" value="Submit" name="submit"> 
+    </form>
+
+    </div>
+
+    <footer class="footer">
+            <p class="footer-text">Copyright of Tyler Sullivan 2019</p>
+        </footer>
+
+</body>
+</html>
+
 
 
 
