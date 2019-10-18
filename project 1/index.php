@@ -9,21 +9,11 @@
     <title>Home</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css?v=1.0">
 </head>
 <body>
 
 <nav>
-
-
-</nav>
-
-
-<?php
-
-if (isset($_COOKIE['username_cookie']) &&  isset($_COOKIE['password_cookie']) && $_COOKIE['login_state'] === 'true') {
-    echo '<h4 class="signed-in-header">Hello, there'.$_COOKIE['username_cookie'] .'  </h4>
-    <nav>
     <ul class="nav d-flex justify-content-center align-items-center">
      <li class="nav-item">
        <a class="nav-link active" href="index.html">Home</a>
@@ -37,6 +27,13 @@ if (isset($_COOKIE['username_cookie']) &&  isset($_COOKIE['password_cookie']) &&
      <button onclick="logout()" name="logout">Logout </button>
    </ul>
    </nav>
+
+
+<?php
+
+if (isset($_COOKIE['username_cookie']) &&  isset($_COOKIE['password_cookie']) && $_COOKIE['login_state'] === 'true') {
+    echo '<h4 class="signed-in-header">Hello, there'.$_COOKIE['username_cookie'] .'  </h4>
+   
    <div class="hero-img">
    <img src="images/clothes-crop.png" alt="">
    <figcaption>Photo by rawpixel.com from Pexels</figcaption>
@@ -55,20 +52,6 @@ if (isset($_COOKIE['username_cookie']) &&  isset($_COOKIE['password_cookie']) &&
 //no user logged in
 else {
      echo '
-     <nav>
-     <ul class="nav d-flex justify-content-center align-items-center">
-     <li class="nav-item">
-       <a class="nav-link active" href="index.html">Home</a>
-     </li>
-     <li class="nav-item">
-       <a class="nav-link" href="inventory.html">Inventory</a>
-     </li>
-     <li class="nav-item">
-       <a class="nav-link" href="Contact.html">Contact</a>
-     </li>
-     
-   </ul>
-     
      <form class="input-form" action="validate-user.php" method="post">
 
      <div class="form-field">
@@ -84,10 +67,6 @@ else {
          <label for="submit"></label>
          <input type="submit" value="Submit" name="submit" />
        </div>
-      </nav>
-
-
-
   </form>
   <form action="create_form.php" class="create-account-content">
   <p>Dont have an account?</p>

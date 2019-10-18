@@ -83,13 +83,10 @@ html {
   .main-content{
       grid-area: main-content;
       display: grid;
-      grid-template-rows: 500px;
       grid-template-areas: 
       "hero-img"
       "module1"
-      "icons"
-      "module2"
-      "test";
+      "icons";
      
   }
 .hero-img{
