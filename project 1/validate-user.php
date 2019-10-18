@@ -1,19 +1,10 @@
 <?php
+
 /*
-if (isset($_COOKIE['username_cookie']) && $_COOKIE['login_state'] === 'true') {
-echo 'You are already signed in hehehe';
-
-  }
-
-  else{
-      echo 'the cookie reset'. $_COOKIE['login_state'];
-  }
-*/
-
 
 $username = $_POST['username'];
 $password = $_POST['password'];
-
+*/
 $isValidUsername = false;
 $isValidPassword = false;
 /*
@@ -23,7 +14,7 @@ if($_POST['username'] === 'dig3134'){
 else
 */
 
-if($_POST['username'] === 'dig3134user' &&  $_POST['password']=== 'dig3134pass'){
+if(isset($_POST) && $_POST['username'] === 'dig3134user' &&  $_POST['password']=== 'dig3134pass'){
     //set the cookie login state to true, store username and passsword and redirect to welcome page
     $isValidUsername = true;
     $isValidPassword = true;
