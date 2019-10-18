@@ -15,7 +15,7 @@
 <?php
 
 if (isset($_COOKIE['username_cookie']) &&  isset($_COOKIE['password_cookie']) && $_COOKIE['login_state'] === 'true') {
-    echo '<h4 style="text-align:center;" class="signed-in-header">Hello, there  </h4>
+    echo '<h4 class="signed-in-header">Hello, there  </h4>
     
     <ul class="nav d-flex justify-content-center align-items-center">
      <li class="nav-item">
@@ -44,8 +44,8 @@ if (isset($_COOKIE['username_cookie']) &&  isset($_COOKIE['password_cookie']) &&
     ';
 
     }
-
-else{
+//no user logged in
+else {
      echo '
      <ul class="nav d-flex justify-content-center align-items-center">
      <li class="nav-item">
@@ -84,7 +84,20 @@ else{
   <p>Dont have an account?</p>
   <label for="submit"></label>
   <input type="submit" value="Create Account" name="submit" />
-</form >';
+</form >
+
+<div class="hero-img">
+<img src="images/clothes-crop.png" alt="">
+<figcaption>Photo by rawpixel.com from Pexels</figcaption>
+            </div>
+
+            <section class="module1">
+                <h2 class="mod-header"> Welcome to <span>SullyShop.com!</span>  <br></h2>
+                <p>Hey there and welcome to Sully Shop! This store was formed by Tyler Sullivan in the fall of 2019 and carries things from shoes and tech all the way to clothes! Please scroll down and feel free to take a look at some of our always expanding inventory!</p>
+
+            </section>
+
+';
     }
 ?>
 
@@ -107,16 +120,7 @@ else{
                         
                  <div class="wrapper">
         <main class="main-content">
-            <div class="hero-img">
-<img src="images/clothes-crop.png" alt="">
-<figcaption>Photo by rawpixel.com from Pexels</figcaption>
-            </div>
 
-            <section class="module1">
-                <h2 class="mod-header"> Welcome to <span>SullyShop.com!</span>  <br></h2>
-                <p>Hey there and welcome to Sully Shop! This store was formed by Tyler Sullivan in the fall of 2019 and carries things from shoes and tech all the way to clothes! Please scroll down and feel free to take a look at some of our always expanding inventory!</p>
-
-            </section>
 
             <section class="icons">
                 <ul class="icons-list">
@@ -150,11 +154,6 @@ else{
                        </div>
                        </li>
                 </ul>
-
-           
-
-           
-
         </main>
 
 

@@ -77,7 +77,9 @@ html {
       "footer";
   }
 
-
+.signed-in-header{
+   text-align:center;
+}
   .main-content{
       grid-area: main-content;
       display: grid;
