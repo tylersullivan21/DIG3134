@@ -12,11 +12,18 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
+<nav>
+
+
+</nav>
+
+
 <?php
 
 if (isset($_COOKIE['username_cookie']) &&  isset($_COOKIE['password_cookie']) && $_COOKIE['login_state'] === 'true') {
     echo '<h4 class="signed-in-header">Hello, there'.$_COOKIE['username_cookie'] .'  </h4>
-    
+    <nav>
     <ul class="nav d-flex justify-content-center align-items-center">
      <li class="nav-item">
        <a class="nav-link active" href="index.html">Home</a>
@@ -29,6 +36,7 @@ if (isset($_COOKIE['username_cookie']) &&  isset($_COOKIE['password_cookie']) &&
      </li>
      <button onclick="logout()" name="logout">Logout </button>
    </ul>
+   </nav>
    <div class="hero-img">
    <img src="images/clothes-crop.png" alt="">
    <figcaption>Photo by rawpixel.com from Pexels</figcaption>
@@ -47,6 +55,7 @@ if (isset($_COOKIE['username_cookie']) &&  isset($_COOKIE['password_cookie']) &&
 //no user logged in
 else {
      echo '
+     <nav>
      <ul class="nav d-flex justify-content-center align-items-center">
      <li class="nav-item">
        <a class="nav-link active" href="index.html">Home</a>
@@ -111,11 +120,11 @@ else {
                     <li class="nav-item"><a href="inventory.html">Inventory</a></li>
                     <li class="nav-item"><a href="contact.html">Contact</a></li>
                 </ul>
--->
+
            
-  </nav>
-               
+  </nav>         
  </div>
+ -->
 
                         
                  <div class="wrapper">
@@ -154,6 +163,7 @@ else {
                        </div>
                        </li>
                 </ul>
+                
         </main>
 
 

@@ -69,7 +69,7 @@ else{
         "username" => $_POST['username'],
         "password" => $_POST['password'],
         "phone" => $_POST['phone'],
-        "email" => $_POST['email'],
+        "email" => filter_var($_POST['email'], FILTER_SANITIZE_EMAIL),
         "street" => $_POST['street'],
         "city" => $_POST['city'],
         "zip-code" => $_POST['zip-code'],
@@ -83,6 +83,18 @@ else{
     $isValidAddress = false;
     $isValidZip = false;
     $isValidState = false;
+
+
+
+    $isValidEmail = false;
+ 
+    if (!filter_var($user_entered_data['email'], FILTER_VALIDATE_EMAIL) === false) {
+        echo($user_entered_data['email']." is a valid email address");
+        $isValidEmail = true;
+    } else {
+        echo($user_entered_data['email']." is not a valid email address");
+    }
+    
    
 if(preg_match("/^\d{5}$/", $user_entered_data['zip-code'])){
     $isValidZip = true;
@@ -137,7 +149,7 @@ else {
     }
 
     //this conditional checks if all flag variables are true or not, when true it will run the success redirect logic.
-    if($isValidAddress === true && $isValidPhone === true && $isValidState === true && $isValidZip === true) {
+    if($isValidAddress === true && $isValidPhone === true && $isValidState === true && $isValidZip === true && $isValidEmail === true) {
         redirectOnSuccess();
         setcookie("username_cookie", "dig3134", time() + 120, "/");
         setcookie("password_cookie", "dig3134pass", time() + 120, "/");
@@ -170,42 +182,42 @@ print_r ($user_entered_data);
 </div>
     <div id="username" class="form-field">
         <label for="username">User Name:</label>
-        <input type="text" name="username" id="username" placeholder="UserName" required />
+        <input type="text" name="username" id="username" placeholder="UserName" maxlength="20" required />
       </div>
 
       <div id="password" class="form-field">
         <label for="password">Password</label>
-        <input type="password" name="password" id="password" placeholder="Password" required />
+        <input type="password" name="password" id="password" placeholder="Password" maxlength="20" required />
       </div>
 
       <div id="phone" class="form-field">
         <label for="phone">Phone Number</label>
-        <input type="tel" name="phone" id="phone" placeholder="Phone Number" required />
+        <input type="tel" name="phone" id="phone" placeholder="Phone Number" maxlength="15" required />
       </div>
 
       <div id="email" class="form-field">
         <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="Email" required />
+        <input type="email" name="email" id="email" placeholder="Email" maxlength="25"  required/>
       </div>
 
-      <div id="stree" class="form-field">
+      <div id="street" class="form-field">
         <label for="street">Street Address</label>
-        <input type="text" name="street" id="street" placeholder="Street Address" required />
+        <input type="text" name="street" id="street" placeholder="Street Address" maxlength="20" required />
       </div>
 
       <div id="city" class="form-field">
         <label for="city">City</label>
-        <input type="text" name="city" id="city" placeholder="City" required />
+        <input type="text" name="city" id="city" placeholder="City" maxlength="20" required />
       </div>
 
       <div id="zip" class="form-field">
         <label for="zip-code">Zip Code</label>
-        <input type="text" name="zip-code" id="zip-code" placeholder="Zip Code" required />
+        <input type="text" name="zip-code" id="zip-code" placeholder="Zip Code" maxlength="5" required />
       </div>
 
       <div id="state" class="form-field">
         <label for="state">State</label>
-        <input type="text" name="state" id="state" placeholder="State" required />
+        <input type="text" name="state" id="state" placeholder="State" maxlength="2" required />
       </div>
       <input id="submit" type="submit" value="Submit" name="submit"> 
     </form>
