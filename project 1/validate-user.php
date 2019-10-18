@@ -23,7 +23,7 @@ if($_POST['username'] === 'dig3134'){
 else
 */
 
-if($_POST['username'] === 'dig3134' &&  $_POST['password']=== 'dig3134pass'){
+if($_POST['username'] === 'dig3134user' &&  $_POST['password']=== 'dig3134pass'){
     //set the cookie login state to true, store username and passsword and redirect to welcome page
     $isValidUsername = true;
     $isValidPassword = true;

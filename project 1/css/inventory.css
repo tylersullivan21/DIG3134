@@ -222,8 +222,6 @@ padding: .5rem;
           /*SHOE CARDS ENDS HERE*/
 /****************************************************/
 
-
-
   .camera-head{
     grid-area: camera-head;
 padding: 0 20%;
@@ -245,7 +243,6 @@ padding: 0 20%;
   .clothes-cards{
     grid-area: clothes-cards;
     display: grid;
-   
     grid-template-columns: repeat(4, auto);
     grid-template-areas: 
     "card1 card2 card3 card4";
