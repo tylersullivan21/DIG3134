@@ -10,7 +10,7 @@ echo 'You are already signed in hehehe';
   }
 */
 
-echo 'this is working';
+
 $username = $_POST['username'];
 $password = $_POST['password'];
 

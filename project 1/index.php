@@ -2,26 +2,92 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Home</title>
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<!--THIS NAV IS NOW MADE WITH BOOTSTRAP INSTEAD OF SELF CREATED BASED ON FEEDBACK-->
-<ul class="nav d-flex justify-content-center align-items-center">
-        <li class="nav-item">
-          <a class="nav-link active" href="index.php">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="inventory.html">Inventory</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="Contact.html">Contact</a>
-        </li>
-        
-      </ul>
+<?php
+
+if (isset($_COOKIE['username_cookie']) &&  isset($_COOKIE['password_cookie']) && $_COOKIE['login_state'] === 'true') {
+    echo '<h4 style="text-align:center;" class="signed-in-header">Hello, there  </h4>
+    
+    <ul class="nav d-flex justify-content-center align-items-center">
+     <li class="nav-item">
+       <a class="nav-link active" href="index.html">Home</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="inventory.html">Inventory</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="Contact.html">Contact</a>
+     </li>
+     <input type="submit" value="Logout" name="logout" />
+   </ul>
+   <div class="hero-img">
+   <img src="images/clothes-crop.png" alt="">
+   <figcaption>Photo by rawpixel.com from Pexels</figcaption>
+</div>
+   <section class="module1">
+
+   <h2 class="mod-header"> Welcome back to <span>SullyShop.com!</span> <br></h2>
+   <p>Hey there and welcome to Sully Shop! This store was formed by Tyler Sullivan in the fall of 2019 and
+       carries things from shoes and tech all the way to clothes! Please scroll down and feel free to take
+       a look at some of our always expanding inventory!</p>
+
+</section>
+    ';
+
+    }
+
+else{
+     echo '
+     <ul class="nav d-flex justify-content-center align-items-center">
+     <li class="nav-item">
+       <a class="nav-link active" href="index.html">Home</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="inventory.html">Inventory</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="Contact.html">Contact</a>
+     </li>
+     
+   </ul>
+     
+     <form class="input-form" action="validate-user.php" method="post">
+
+     <div class="form-field">
+         <label for="username">Username</label>
+         <input type="text" name="username" id="shoe-brand" placeholder="Username" required />
+       </div>
+
+       <div class="form-field">
+         <label for="password">Password</label>
+         <input type="password" name="password" id="shoe-brand" placeholder="Password" required />
+       </div>
+       <div class="form-field">
+         <label for="submit"></label>
+         <input type="submit" value="Submit" name="submit" />
+       </div>
+      </nav>
+
+
+
+  </form>
+  <form action="create_form.php" class="create-account-content">
+  <p>Dont have an account?</p>
+  <label for="submit"></label>
+  <input type="submit" value="Create Account" name="submit" />
+</form >';
+    }
+?>
+
    <!--
 <div class="nav-wrapper">
             <nav class="navbar">
@@ -33,43 +99,7 @@
                     <li class="nav-item"><a href="contact.html">Contact</a></li>
                 </ul>
 -->
-                <?php
-
-                        if (isset($_COOKIE['username_cookie']) &&  isset($_COOKIE['password_cookie']) && $_COOKIE['login_state'] === 'true') {
-                            echo 'You are already signed in hehehe';
-
-                            }
-
-                        else{
-                             echo ' <form class="input-form" action="validate-user.php" method="post">
-                
-                             <div class="form-field">
-                                 <label for="username">Username</label>
-                                 <input type="text" name="username" id="shoe-brand" placeholder="Username" required />
-                               </div>
-             
-                               <div class="form-field">
-                                 <label for="password">Password</label>
-                                 <input type="password" name="password" id="shoe-brand" placeholder="Password" required />
-                               </div>
-                               <div class="form-field">
-                                 <label for="submit"></label>
-                                 <input type="submit" value="Submit" name="submit" />
-                               </div>
-             
-                            
-                              </nav>
-             
-                        
-             
-                          </form>
-                          <form action="create_form.php" class="create-account-content">
-                          <p>Dont have an account?</p>
-                          <label for="submit"></label>
-                          <input type="submit" value="Create Account" name="submit" />
-                 </form >';
-                            }
-  ?>
+           
   </nav>
                
  </div>
@@ -77,7 +107,6 @@
                         
                  <div class="wrapper">
         <main class="main-content">
-
             <div class="hero-img">
 <img src="images/clothes-crop.png" alt="">
 <figcaption>Photo by rawpixel.com from Pexels</figcaption>
@@ -138,7 +167,15 @@
 
 
     </div>
-
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
     <script src="js/test.js"></script>
 </body>
 </html>
