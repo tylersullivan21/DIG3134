@@ -15,7 +15,7 @@
 <?php
 
 if (isset($_COOKIE['username_cookie']) &&  isset($_COOKIE['password_cookie']) && $_COOKIE['login_state'] === 'true') {
-    echo '<h4 class="signed-in-header">Hello, there  </h4>
+    echo '<h4 class="signed-in-header">Hello, there'.$_COOKIE['username_cookie'] .'  </h4>
     
     <ul class="nav d-flex justify-content-center align-items-center">
      <li class="nav-item">
