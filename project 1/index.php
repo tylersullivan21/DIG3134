@@ -9,8 +9,20 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
-   
+<!--THIS NAV IS NOW MADE WITH BOOTSTRAP INSTEAD OF SELF CREATED BASED ON FEEDBACK-->
+<ul class="nav d-flex justify-content-center align-items-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.php">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="inventory.html">Inventory</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Contact.html">Contact</a>
+        </li>
+        
+      </ul>
+   <!--
 <div class="nav-wrapper">
             <nav class="navbar">
   
@@ -20,6 +32,7 @@
                     <li class="nav-item"><a href="inventory.html">Inventory</a></li>
                     <li class="nav-item"><a href="contact.html">Contact</a></li>
                 </ul>
+-->
                 <?php
 
                         if (isset($_COOKIE['username_cookie']) &&  isset($_COOKIE['password_cookie']) && $_COOKIE['login_state'] === 'true') {
