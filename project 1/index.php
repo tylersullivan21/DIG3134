@@ -24,7 +24,6 @@
      <li class="nav-item">
        <a class="nav-link" href="Contact.html">Contact</a>
      </li>
-
    </ul>
    </nav>
 
@@ -32,7 +31,7 @@
 <?php
 // USER LOGGED IN, ADD MARKUP FOR UNIQUE  VIEW
 if (isset($_COOKIE['username_cookie']) &&  isset($_COOKIE['password_cookie']) && $_COOKIE['login_state'] === 'true') {
-    echo '<h4 class="signed-in-header">Hello, there'.$_COOKIE['username_cookie'] .'  </h4>
+    echo '<h5 class="signed-in-header">'.$_COOKIE['username_cookie'] .', Use code ABCDEF for 15% off your next purchase.  </h5>
     <button onclick="logout()" name="logout">Logout </button>
    <div class="hero-img">
    <img src="images/clothes-crop.png" alt="">
@@ -40,10 +39,8 @@ if (isset($_COOKIE['username_cookie']) &&  isset($_COOKIE['password_cookie']) &&
 </div>
    <section class="module1">
 
-   <h2 class="mod-header"> Welcome back to <span>SullyShop.com!</span> <br></h2>
-   <p>Hey there and welcome to Sully Shop! This store was formed by Tyler Sullivan in the fall of 2019 and
-       carries things from shoes and tech all the way to clothes! Please scroll down and feel free to take
-       a look at some of our always expanding inventory!</p>
+   <h2 class="mod-header"> Welcome back to <span>SullyShop.com</span>, '. $_COOKIE['username_cookie']. '! <br></h2>
+   <p>Welcome back to <span>Sully Shop</span>! Thank you for being an account holder and please check out some exclusive deals only for you.</p>
 
 </section>
     ';
@@ -82,7 +79,6 @@ else {
             <section class="module1">
                 <h2 class="mod-header"> Welcome to <span>SullyShop.com!</span>  <br></h2>
                 <p>Hey there and welcome to Sully Shop! This store was formed by Tyler Sullivan in the fall of 2019 and carries things from shoes and tech all the way to clothes! Please scroll down and feel free to take a look at some of our always expanding inventory!</p>
-
             </section>
 
 ';
@@ -103,9 +99,7 @@ else {
            
   </nav>         
  </div>
- -->
-
-                        
+ -->    
                  <div class="wrapper">
         <main class="main-content">
 

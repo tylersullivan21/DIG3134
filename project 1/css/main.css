@@ -18,9 +18,7 @@ html {
       background-color:#232f3e;
       height: 50px;;
   }
-  .nav-item{
-    
-  }
+  
   .nav-link{
       color: white;
       font-size: 22px;
@@ -66,6 +64,10 @@ html {
   }
 
 */
+.input-form{
+    background-color: black;
+}
+
   .signed-in-header{
       text-align: center;;
   }

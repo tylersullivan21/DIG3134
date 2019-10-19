@@ -4,32 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-   
-    <link rel="stylesheet" href="css/create_account.css">
+    <title>Create Account</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/create_account.css?v=1.0">
 </head>
 <body>
   
-<div class="nav-wrapper">
-            <nav class="navbar">
-                   
-                   <ul class="nav-links">
-                    <li class="nav-item"><a href="index.html">Home</a></li>
-                    <li class="nav-item"><a href="inventory.html">Inventory</a></li>
-                    <li class="nav-item"><a href="contact.html">Contact</a></li>
-                </ul>
-  </nav>
-               
- </div>
+<nav>
+    <ul class="nav d-flex justify-content-center align-items-center">
+     <li class="nav-item">
+       <a class="nav-link active" href="index.php">Home</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="inventory.html">Inventory</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="Contact.html">Contact</a>
+     </li>
+   </ul>
+   </nav>
 
     <div class="main-content">
     <form class="form-grid" action="" method="POST">
 <div class="intro">
     <h1>Create An Account</h1>
-    <p>Feel free to create account to get a unique experience</p>
+    <p style="text-align:center; font-size: 18px;" >Please create an account so you do not miss out on exclusive deals and promotions!</p>
 </div>
 
-<div class="error-messages">
+<div style="color:red" class="error-messages">
 <?php
 
 
@@ -84,21 +87,16 @@ else{
     $isValidZip = false;
     $isValidState = false;
 
-
-
-    $isValidEmail = false;
- 
-    if (!filter_var($user_entered_data['email'], FILTER_VALIDATE_EMAIL) === false) {
-        echo($user_entered_data['email']." is a valid email address");
-        $isValidEmail = true;
-    } else {
-        echo($user_entered_data['email']." is not a valid email address");
-    }
     
    
+  /************************** */
+    /*THE REGEX FOR ZIP CODE */
+    /************************* */
+
+    
 if(preg_match("/^\d{5}$/", $user_entered_data['zip-code'])){
     $isValidZip = true;
-    echo 'The regex for zip code has been met';
+  
     echo "</br>";
 }
 
@@ -114,7 +112,7 @@ else{
 
 if(preg_match("/^[A-Z]{2}$/" , $user_entered_data['state'])){
     $isValidState = true;
-    echo 'The state regex passed';
+    
     echo "</br>";
 }
 
@@ -125,7 +123,6 @@ else{
 
 if(preg_match("/^\d{1}.*[a-zA-Z]{1}$/" , $user_entered_data['street'])){
     $isValidAddress = true;
-    echo 'The regex for address passed';
     echo "</br>";
 }
 else {
@@ -139,7 +136,7 @@ else {
 
     if(preg_match("/^\d{10}$/" , $user_entered_data['phone'])){
         $isValidPhone = true;
-        echo 'the phone number is clean';
+    
         echo "</br>";
     }
     
@@ -227,6 +224,18 @@ print_r ($user_entered_data);
     <footer class="footer">
             <p class="footer-text">Copyright of Tyler Sullivan 2019</p>
         </footer>
+
+
+        <script   src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+    
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="js/test.js"></script>
 
 </body>
 </html>
