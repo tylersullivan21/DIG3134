@@ -9,7 +9,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/main.css?v=1.0">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
@@ -51,18 +51,19 @@ if (isset($_COOKIE['username_cookie']) &&  isset($_COOKIE['password_cookie']) &&
 //no user logged in SHOW COMMON VIEW
 else {
      echo '
+     <link rel="stylesheet" href="css/input-form.css">
      <form class="input-form" action="validate-user.php" method="post">
 
-     <div class="form-field">
+     <div class="username_input" class="form-field">
          <label for="username">Username</label>
          <input type="text" name="username" id="shoe-brand" placeholder="Username" required />
        </div>
 
-       <div class="form-field">
+       <div class="password_input" class="form-field">
          <label for="password">Password</label>
          <input type="password" name="password" id="shoe-brand" placeholder="Password" required />
        </div>
-       <div class="form-field">
+       <div class="submit-btn" class="form-field">
          <label for="submit"></label>
          <input type="submit" value="Submit" name="submit" />
        </div>

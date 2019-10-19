@@ -1,0 +1,7 @@
+.input-form{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "username_input password_input submit-btn",
+    
+}

@@ -26,7 +26,7 @@ if(isset($_POST) && $_POST['username'] === 'dig3134user' &&  $_POST['password']=
     echo $_COOKIE["password_cookie"];
     echo $_COOKIE["username_cookie"];
     echo $_COOKIE["password_cookie"];
-    echo 'congrats! you got the right username';
+    echo 'Success! The credentials that you entered match our records. You will now be directed...';
     header("refresh:2; ./index.php");
     echo "<br>";
 }
