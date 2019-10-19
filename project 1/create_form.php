@@ -146,7 +146,7 @@ else {
     }
 
     //this conditional checks if all flag variables are true or not, when true it will run the success redirect logic.
-    if($isValidAddress === true && $isValidPhone === true && $isValidState === true && $isValidZip === true && $isValidEmail === true) {
+    if($isValidAddress === true && $isValidPhone === true && $isValidState === true && $isValidZip === true) {
         redirectOnSuccess();
         setcookie("username_cookie", "dig3134", time() + 120, "/");
         setcookie("password_cookie", "dig3134pass", time() + 120, "/");
@@ -235,8 +235,6 @@ print_r ($user_entered_data);
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
-    <script src="js/test.js"></script>
-
 </body>
 </html>
 
