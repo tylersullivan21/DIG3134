@@ -32,7 +32,7 @@
 // USER LOGGED IN, ADD MARKUP FOR UNIQUE  VIEW
 if (isset($_COOKIE['username_cookie']) &&  isset($_COOKIE['password_cookie']) && $_COOKIE['login_state'] === 'true') {
     echo '
-    <link rel="stylesheet" href="css/logged-in.css?v=1.0">
+    <link rel="stylesheet" href="css/logged-in.css?">
     <h5 class="signed-in-header">'.$_COOKIE['username_cookie'] .', Use code ABCDEF for 15% off your next purchase.  </h5>
     <button class="grid-area:logout;" onclick="logout()" name="logout">Logout </button>
    <div class="hero-img">

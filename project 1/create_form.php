@@ -57,7 +57,7 @@ else{
     setcookie("username_cookie", "dig3134", time() + 20, "/");
     setcookie("password_cookie", "dig3134pass", time() + 20, "/");
     setcookie("login_state", "true", time() + 20);
-    echo "You have sucessfully created an account, " . $_POST['username'] . " You will be directed to the home page in 5 seconds";
+    echo "<h5>You have sucessfully created an account, <strong>" . $_POST['username'] . "</strong> You will be directed to the home page in 5 seconds</h5>";
     die();
  }
 
