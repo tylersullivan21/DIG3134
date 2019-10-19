@@ -173,7 +173,7 @@ if(isset($_POST['submit']))
 validateUsername($user_entered_data['username']);
 validateZip($user_entered_data['zip-code']);
 */
-print_r ($user_entered_data);
+
 
 ?>
 </div>
