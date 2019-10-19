@@ -101,8 +101,8 @@ if(preg_match("/^\d{5}$/", $user_entered_data['zip-code'])){
 }
 
 else{
-    echo 'Your zip code must contain 5 numbers:: '.$user_entered_data['zip-code'] ;
-    echo preg_match("/mustmatch/", "mustmatch");
+    echo 'Your zip code must contain 5 numbers' ;
+   // echo preg_match("/mustmatch/", "mustmatch");
     echo "</br>";
 }
 
@@ -157,7 +157,7 @@ else {
         echo $_COOKIE["password_cookie"];
     }
     else{
-echo 'your values are wrong';
+echo 'Please try again';
 
     }
 
