@@ -27,13 +27,13 @@ if(isset($_POST) && $_POST['username'] === 'dig3134user' &&  $_POST['password']=
     echo $_COOKIE["username_cookie"];
     echo $_COOKIE["password_cookie"];
     echo 'congrats! you got the right username';
-    header("refresh:1; ./index.php");
+    header("refresh:2; ./index.php");
     echo "<br>";
 }
 
 else{
     header("refresh:1; ./index.php");
-    echo'Your value was wrong';
+    echo'The credentials that you entered were incorrect, please try again.';
 }
 
 
