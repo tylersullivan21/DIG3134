@@ -24,7 +24,7 @@
      <li class="nav-item">
        <a class="nav-link" href="Contact.html">Contact</a>
      </li>
-     <button onclick="logout()" name="logout">Logout </button>
+
    </ul>
    </nav>
 
@@ -33,7 +33,7 @@
 // USER LOGGED IN, ADD MARKUP FOR UNIQUE  VIEW
 if (isset($_COOKIE['username_cookie']) &&  isset($_COOKIE['password_cookie']) && $_COOKIE['login_state'] === 'true') {
     echo '<h4 class="signed-in-header">Hello, there'.$_COOKIE['username_cookie'] .'  </h4>
-   
+    <button onclick="logout()" name="logout">Logout </button>
    <div class="hero-img">
    <img src="images/clothes-crop.png" alt="">
    <figcaption>Photo by rawpixel.com from Pexels</figcaption>

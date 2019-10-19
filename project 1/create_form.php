@@ -69,7 +69,7 @@ else{
         "username" => $_POST['username'],
         "password" => $_POST['password'],
         "phone" => $_POST['phone'],
-        "email" => filter_var($_POST['email'], FILTER_SANITIZE_EMAIL),
+        "email" => $_POST['email'], 
         "street" => $_POST['street'],
         "city" => $_POST['city'],
         "zip-code" => $_POST['zip-code'],
