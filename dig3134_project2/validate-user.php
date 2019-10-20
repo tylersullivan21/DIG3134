@@ -18,9 +18,9 @@ if(isset($_POST) && $_POST['username'] === 'dig3134user' &&  $_POST['password']=
     //set the cookie login state to true, store username and passsword and redirect to welcome page
     $isValidUsername = true;
     $isValidPassword = true;
-    setcookie("username_cookie", "dig3134",  time() + 10, "/");
-    setcookie("password_cookie", "dig3134pass", time() + 10, "/");
-    setcookie("login_state", "true", time() + 10);
+    setcookie("username_cookie", "dig3134",  time() + 60, "/");
+    setcookie("password_cookie", "dig3134pass", time() + 60, "/");
+    setcookie("login_state", "true", time() + 60);
     echo $_COOKIE["login_state"];
     echo $_COOKIE["username_cookie"];
     echo $_COOKIE["password_cookie"];
