@@ -29,7 +29,7 @@
 -->
 
 <?php
-// Change the line below to your timezone!
+//USING UNIQUE PHP ELEMENT HERE TO GET THE TIME ZONE AND STORE INTO VAR so it can be used
 date_default_timezone_set('America/New_York');
 $date = date('m/d/Y h:i:s a', time());
 
@@ -55,7 +55,7 @@ if (isset($_COOKIE['username_cookie']) &&  isset($_COOKIE['password_cookie']) &&
    </nav>
     
     <link rel="stylesheet" href="css/logged-in.css">
-    <p class="signed-in-header">'.$_COOKIE['username_cookie'] .', Use code SULLY for free shipping and 15% off your next purchase. This deal is valid as of ' .$date .'   </p>
+    <p class="signed-in-header">'.$_COOKIE['username_cookie'] .', Use code SULLY for free shipping and 10% off your next purchase. This deal is valid as of ' .$date .'   </p>
    
    <div class="hero-img">
    <img src="images/clothes-crop.png" alt="">
@@ -64,7 +64,13 @@ if (isset($_COOKIE['username_cookie']) &&  isset($_COOKIE['password_cookie']) &&
    <section class="module1">
 
    <h2 class="mod-header"> Hey there, <span>'. $_COOKIE['username_cookie']. '</span> Welcome back! <br></h2>
-   <p>As a reward for being signed in, why not check out these awesome deals for that are exculsive to you being an account holder with us?</p>
+   <h4 style="text-align:center; line-height: 3em;" >Check out these exclusive deals for being signed in!</h4>
+   <ul style="line-height:2em; padding: 2px 0;text-align:center;font-size: 18px">
+      <li class="markdown"> Cardigan sweater now <span style="color:red";> $31.50.</span> Was $34.99!  </li>
+      <li class="markdown" > Air Jordan 1 now <span style="color:red";> $269.99.</span> Was $299.99!</li>
+      <li class="markdown"> Cannon DSLR now <span style="color:red";> $810.00.</span> Was $899.99!</li>
+
+   </ul>
 
 </section>
 
@@ -207,24 +213,15 @@ else {
                     <li class="nav-item"><a href="index.html">Home</a></li>
                     <li class="nav-item"><a href="inventory.html">Inventory</a></li>
                     <li class="nav-item"><a href="contact.html">Contact</a></li>
-                </ul>
-
-           
+                </ul>       
   </nav>         
  </div>
  -->    
                  <div class="wrapper">
-        
-
-
+  
         <footer class="footer">
             <p class="footer-text">Copyright of Tyler Sullivan 2019</p>
         </footer>
-
-
-
-
-
     </div>
     
     <script   src="https://code.jquery.com/jquery-3.4.1.min.js"integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>

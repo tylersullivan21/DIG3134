@@ -21,7 +21,9 @@
     margin-bottom:  0!important;
 }
 
-
+span .markdown{
+    color: red;
+}
 .nav-links{
     grid-column: 2/3;
    list-style-type:none ;
