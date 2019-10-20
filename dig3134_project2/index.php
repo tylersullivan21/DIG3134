@@ -49,7 +49,7 @@ if (isset($_COOKIE['username_cookie']) &&  isset($_COOKIE['password_cookie']) &&
      <li class="nav-item">
        <a class="nav-link" href="contact.html">Contact</a>
      </li>
-     <button class="grid-area:logout;" onclick="logout()" name="logout">Logout </button>
+     <button style="padding: 4px;" class="grid-area:logout;" onclick="logout()" name="logout">Logout </button>
    </ul>
 
    </nav>
@@ -140,7 +140,7 @@ else {
      </div>
      <div class="submit-btn" class="form-field">
        <label for="submit"></label>
-       <input class="submit-button" type="submit" value="Submit" name="submit" />
+       <input style="padding: 4px; width: 65px;" class="submit-button" type="submit" value="Submit" name="submit" />
      </div>
 </form>
    </nav>

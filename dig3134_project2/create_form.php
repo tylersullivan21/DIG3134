@@ -216,7 +216,7 @@ validateZip($user_entered_data['zip-code']);
         <label for="state">State</label>
         <input type="text" name="state" id="state" placeholder="State" maxlength="2" required />
       </div>
-      <input id="submit" type="submit" value="Submit" name="submit"> 
+      <input style="padding: 4px;" id="submit" type="submit" value="Submit" name="submit"> 
     </form>
 
     </div>
