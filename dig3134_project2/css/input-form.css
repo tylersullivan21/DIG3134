@@ -1,7 +1,42 @@
-.input-form{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+.navbar{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,auto);
     grid-template-areas: 
-    "username_input password_input submit-btn",
-    
+    "nav-links input-form";
+    background-color: #232f3e;
 }
+
+.nav-links{
+    grid-column: 2/3;
+   list-style-type:none ;
+}
+label{
+    color: white;
+    margin: 0 10px;
+    margin: 0 10px;
+    padding: 5px 0;
+}
+.submit-button{
+ margin: 10px 0;
+}
+.input-form{
+display: grid;
+height: 100px;
+width: 100px;
+grid-template-columns: repeat(4,1fr);
+grid-template-rows: auto auto;
+grid-template-areas:
+"label username label password",
+"submit-btn";
+
+}
+
+input {
+    width: 100px;
+    height: 25px;
+    margin: 0 10px;
+    margin: 0 10px;
+    padding: 5px 0;
+  }
+ 
