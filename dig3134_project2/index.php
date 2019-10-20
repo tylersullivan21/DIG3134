@@ -29,6 +29,10 @@
 
 
 <?php
+// Change the line below to your timezone!
+date_default_timezone_set('America/New_York');
+$date = date('m/d/Y h:i:s a', time());
+echo $date;
 // USER LOGGED IN, ADD MARKUP FOR UNIQUE  VIEW
 if (isset($_COOKIE['username_cookie']) &&  isset($_COOKIE['password_cookie']) && $_COOKIE['login_state'] === 'true') {
     echo '
