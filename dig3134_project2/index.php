@@ -33,6 +33,8 @@
 date_default_timezone_set('America/New_York');
 $date = date('m/d/Y h:i:s a', time());
 
+$today = date("D"); 
+
 // USER LOGGED IN, ADD MARKUP FOR UNIQUE  VIEW
 if (isset($_COOKIE['username_cookie']) &&  isset($_COOKIE['password_cookie']) && $_COOKIE['login_state'] === 'true') {
     echo '
@@ -61,8 +63,8 @@ if (isset($_COOKIE['username_cookie']) &&  isset($_COOKIE['password_cookie']) &&
 </div>
    <section class="module1">
 
-   <h2 class="mod-header"> Welcome back to <span>SullyShop.com</span>, '. $_COOKIE['username_cookie']. '! <br></h2>
-   <p>Welcome back to <span>Sully Shop</span>! Thank you for being an account holder and please check out some exclusive deals only for you.</p>
+   <h2 class="mod-header"> Hey there, <span>'. $_COOKIE['username_cookie']. '</span> Welcome back! <br></h2>
+   <p>As a reward for being signed in, why not check out these awesome deals for that are exculsive to you being an account holder with us?</p>
 
 </section>
 
@@ -152,7 +154,41 @@ else {
                 <h2 class="mod-header"> Welcome to <span>SullyShop.com!</span>  <br></h2>
                 <p>Hey there and welcome to Sully Shop! This store was formed by Tyler Sullivan in the fall of 2019 and carries things from shoes and tech all the way to clothes! Please scroll down and feel free to take a look at some of our always expanding inventory!</p>
             </section>
+            <main class="main-content">
+            <section class="icons">
+                <ul class="icons-list">
+                    <li class="left-list-item">
+                         <div class="icon-img"><img src="images/air-jordan-fashion-feet-2065695.jpg" alt="">
+                            <figcaption>Photo by AJ Nakasone from Pexels</figcaption>
+                        </div>
+                    <div class="icon-text">
+                        <h1 class="icon-heading"><a href="inventory.html">Shop Shoes</a></h1>
+                             <div class="icon-description">Search our best selection of shoes</div>
+                    </div>
+                    </li>
 
+                    <li class="center-list-item">
+                            <div class="icon-img"><img src="images/black-and-white-cameras-classic-1422220 (1).jpg" alt="">
+                                <figcaption>Photo by Free Creative Stuff from Pexels</figcaption>
+                            </div>
+                       <div class="icon-text">
+                        <h1 class="icon-heading"><a href="inventory.html">Shop Cameras</a></h1>
+                                <div class="icon-description">Check out our Cameras</div>
+                       </div>
+                       </li>
+
+                       <li class="right-list-item">
+                            <div class="icon-img"><img src="images/apparel-attire-blur-994517.jpg" alt="">
+                                <figcaption>Photo by Artem Beliaikin from Pexels</figcaption>
+                            </div>
+                       <div class="icon-text">
+                        <h1 class="icon-heading"><a href="inventory.html">Shop Clothes</a></h1>
+                                <div class="icon-description">Check out our clothes</div>
+                       </div>
+                       </li>
+                </ul>
+                
+        </main>
 ';
     }
 ?>
