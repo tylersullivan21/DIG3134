@@ -55,7 +55,7 @@ if (isset($_COOKIE['username_cookie']) &&  isset($_COOKIE['password_cookie']) &&
    </nav>
     
     <link rel="stylesheet" href="css/logged-in.css">
-    <p class="signed-in-header">'.$_COOKIE['username_cookie'] .', Use code ABCDEF for free shipping and 15% off your next purchase. This deal is valid as of ' .$date .'   </p>
+    <p class="signed-in-header">'.$_COOKIE['username_cookie'] .', Use code SULLY for free shipping and 15% off your next purchase. This deal is valid as of ' .$date .'   </p>
    
    <div class="hero-img">
    <img src="images/clothes-crop.png" alt="">
@@ -140,10 +140,14 @@ else {
    </nav>
      <link rel="stylesheet" href="css/input-form.css?v=1.0">
   
-  <form class="user-button" action="create_form.php" class="create-account-content">
-  <p>Dont have an account?</p>
+  <form action="create_form.php" class="create-account-content">
+  
+  <p class="tagline">Need an account?</p>
+
+  <div class="create">
   <label for="submit"></label>
-  <input type="submit" value="Create Account" name="submit" />
+  <input class="create-btn" type="submit" value="Create Account" name="submit" />
+  </div>
 </form >
 
 <div class="hero-img">
