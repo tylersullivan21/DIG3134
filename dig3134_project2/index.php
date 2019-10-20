@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-
+<!--
 <nav>
     <ul class="nav d-flex justify-content-center align-items-center">
      <li class="nav-item">
@@ -26,7 +26,7 @@
      </li>
    </ul>
    </nav>
-
+-->
 
 <?php
 // Change the line below to your timezone!
@@ -36,9 +36,25 @@ $date = date('m/d/Y h:i:s a', time());
 // USER LOGGED IN, ADD MARKUP FOR UNIQUE  VIEW
 if (isset($_COOKIE['username_cookie']) &&  isset($_COOKIE['password_cookie']) && $_COOKIE['login_state'] === 'true') {
     echo '
-    <link rel="stylesheet" href="css/logged-in.css?">
+    <nav>
+    <ul class="nav d-flex justify-content-center align-items-center">
+     <li class="nav-item">
+       <a class="nav-link active" href="index.php">Home</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="inventory.html">Inventory</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="contact.html">Contact</a>
+     </li>
+     <button class="grid-area:logout;" onclick="logout()" name="logout">Logout </button>
+   </ul>
+
+   </nav>
+    
+    <link rel="stylesheet" href="css/logged-in.css">
     <p class="signed-in-header">'.$_COOKIE['username_cookie'] .', Use code ABCDEF for free shipping and 15% off your next purchase. This deal is valid as of ' .$date .'   </p>
-    <button class="grid-area:logout;" onclick="logout()" name="logout">Logout </button>
+   
    <div class="hero-img">
    <img src="images/clothes-crop.png" alt="">
    <figcaption>Photo by rawpixel.com from Pexels</figcaption>
@@ -49,12 +65,61 @@ if (isset($_COOKIE['username_cookie']) &&  isset($_COOKIE['password_cookie']) &&
    <p>Welcome back to <span>Sully Shop</span>! Thank you for being an account holder and please check out some exclusive deals only for you.</p>
 
 </section>
+
+<main class="main-content">
+            <section class="icons">
+                <ul class="icons-list">
+                    <li class="left-list-item">
+                         <div class="icon-img"><img src="images/air-jordan-fashion-feet-2065695.jpg" alt="">
+                            <figcaption>Photo by AJ Nakasone from Pexels</figcaption>
+                        </div>
+                    <div class="icon-text">
+                        <h1 class="icon-heading"><a href="inventory.html">Shop Shoes</a></h1>
+                             <div class="icon-description">Search our best selection of shoes</div>
+                    </div>
+                    </li>
+
+                    <li class="center-list-item">
+                            <div class="icon-img"><img src="images/black-and-white-cameras-classic-1422220 (1).jpg" alt="">
+                                <figcaption>Photo by Free Creative Stuff from Pexels</figcaption>
+                            </div>
+                       <div class="icon-text">
+                        <h1 class="icon-heading"><a href="inventory.html">Shop Cameras</a></h1>
+                                <div class="icon-description">Check out our Cameras</div>
+                       </div>
+                       </li>
+
+                       <li class="right-list-item">
+                            <div class="icon-img"><img src="images/apparel-attire-blur-994517.jpg" alt="">
+                                <figcaption>Photo by Artem Beliaikin from Pexels</figcaption>
+                            </div>
+                       <div class="icon-text">
+                        <h1 class="icon-heading"><a href="inventory.html">Shop Clothes</a></h1>
+                                <div class="icon-description">Check out our clothes</div>
+                       </div>
+                       </li>
+                </ul>
+                
+        </main>
     ';
 
     }
 //no user logged in SHOW COMMON VIEW
 else {
      echo '
+     <nav>
+    <ul class="nav d-flex justify-content-center align-items-center">
+     <li class="nav-item">
+       <a class="nav-link active" href="index.php">Home</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="inventory.html">Inventory</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="contact.html">Contact</a>
+     </li>
+   </ul>
+   </nav>
      <link rel="stylesheet" href="css/input-form.css">
      <form class="input-form" action="validate-user.php" method="post">
 
@@ -108,43 +173,7 @@ else {
  </div>
  -->    
                  <div class="wrapper">
-        <main class="main-content">
-
-
-            <section class="icons">
-                <ul class="icons-list">
-                    <li class="left-list-item">
-                         <div class="icon-img"><img src="images/air-jordan-fashion-feet-2065695.jpg" alt="">
-                            <figcaption>Photo by AJ Nakasone from Pexels</figcaption>
-                        </div>
-                    <div class="icon-text">
-                        <h1 class="icon-heading"><a href="inventory.html">Shop Shoes</a></h1>
-                             <div class="icon-description">Search our best selection of shoes</div>
-                    </div>
-                    </li>
-
-                    <li class="center-list-item">
-                            <div class="icon-img"><img src="images/black-and-white-cameras-classic-1422220 (1).jpg" alt="">
-                                <figcaption>Photo by Free Creative Stuff from Pexels</figcaption>
-                            </div>
-                       <div class="icon-text">
-                        <h1 class="icon-heading"><a href="inventory.html">Shop Cameras</a></h1>
-                                <div class="icon-description">Check out our Cameras</div>
-                       </div>
-                       </li>
-
-                       <li class="right-list-item">
-                            <div class="icon-img"><img src="images/apparel-attire-blur-994517.jpg" alt="">
-                                <figcaption>Photo by Artem Beliaikin from Pexels</figcaption>
-                            </div>
-                       <div class="icon-text">
-                        <h1 class="icon-heading"><a href="inventory.html">Shop Clothes</a></h1>
-                                <div class="icon-description">Check out our clothes</div>
-                       </div>
-                       </li>
-                </ul>
-                
-        </main>
+        
 
 
         <footer class="footer">

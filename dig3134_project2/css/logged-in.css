@@ -1,6 +1,11 @@
 .input-form{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-areas: 
-    ""
+    
+}
+
+.signed-in-header{
+    margin: auto auto;
+    background-color: #fffdd0;
+    height: 40px;
 }
