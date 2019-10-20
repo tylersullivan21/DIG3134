@@ -249,7 +249,9 @@ padding: 0 12%;
     grid-template-areas: 
     "card1 card2 card3 card4";
   }
-
+h5{
+  text-align: center;
+}
 .footer{
   display: grid;
 height: 80px;
