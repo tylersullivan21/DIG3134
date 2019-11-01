@@ -1,3 +1,11 @@
+<?php
+session_start();
+/*echo session_id();
+ echo "page is loaded :: ".isset($_SESSION);
+ print_r($_SESSION);
+echo 'result:: '.$_SESSION['loggedin'];*/
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,9 +42,9 @@ date_default_timezone_set('America/New_York');
 $date = date('m/d/Y h:i:s a', time());
 
 $today = date("D"); 
-
 // USER LOGGED IN, ADD MARKUP FOR UNIQUE  VIEW
-if (isset($_COOKIE['username_cookie']) &&  isset($_COOKIE['password_cookie']) && $_COOKIE['login_state'] === 'true') {
+if (isset($_SESSION['loggedin']) &&  $_SESSION['loggedin'] === 'tyler_true') {
+   echo 'if cond met:: logged in ='.$_SESSION['loggedin'];
     echo '
     <nav>
     <ul class="nav d-flex justify-content-center align-items-center">
@@ -240,7 +248,7 @@ else {
 function logout() { 
   console.log("logout button was pressed onclick function was triggered");
 
-   window.location = "logout.php";s
+   window.location = "logout.php";
     return true; 
 } 
 </script>

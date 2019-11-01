@@ -1,3 +1,7 @@
+<?php
+ session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,10 +57,9 @@ else{
 
  function redirectOnSuccess (){
      //TODO :: MAKE COOKIES
+    
     header("refresh:5; ./index.php");
-    setcookie("username_cookie", "dig3134", time() + 20, "/");
-    setcookie("password_cookie", "dig3134pass", time() + 20, "/");
-    setcookie("login_state", "true", time() + 20);
+    $_SESSION['loggedin'] ='tyler_true';
     echo "<h5>You have sucessfully created an account, <strong>" . $_POST['username'] . "</strong> You will be directed to the home page in 5 seconds</h5>";
     die();
  }
