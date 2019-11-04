@@ -152,8 +152,20 @@ else {
     //this conditional checks if all flag variables are true or not, when true it will run the success redirect logic.
     if($isValidAddress === true && $isValidPhone === true && $isValidState === true && $isValidZip === true) {
       //insert into db//
-      $insert = "INSERT INTO project3 (username, password, zip) VALUES ('test','wordssap','32696')";
-       
+      $insert = "INSERT INTO project3 (username, password, zip) VALUES ('"
+      .$user_entered_data["username"]
+      ."','"
+      .$user_entered_data["password"]
+      ."','"
+      .$user_entered_data["zip-code"]
+      ."')";
+
+      echo "::::::::::::::::::::::::::::::::::::::::::::::::: see this ". $insert." :: this is the query we are trying to execute";
+      
+      $connection = getConnection();
+      mysqli_query($connection, $insert) or die('Could not insert into data: ' . mysqli_error($connection));
+      mysqli_close($connection);
+      
         redirectOnSuccess();
         /* SET SESSION VARIABLES INSTEAD OF USING COOKIES JUST FOR THE USERNAME, DONT STORE PASSWORD
         setcookie("username_cookie", "dig3134", time() + 120, "/");

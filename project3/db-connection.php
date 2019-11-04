@@ -1,17 +1,25 @@
 <?php
-$username = "ja240668";
-$password = "KumaJake2198!";
-$dbname = "ja240668";
 
+function getConnection()
+{
+    $username = "ja240668";
+    $password = "KumaJake2198!";
+    $dbname = "ja240668";
 
-$connection = mysqli_connect("localhost", "$username", "$password", "$dbname") or die(mysqli_error($connection));
+    $connection = mysqli_connect("localhost", "$username", "$password", "$dbname") or die(mysqli_error($connection));
 
-if (!$connection) {
-    die("It did not run" . mysqli_connect_error());
-} else {
+    define('mysqlconn',$connection);
 
-    echo "The php code ran";
+    if (!$connection) {
+        die("It did not run" . mysqli_connect_error());
+    } else {
+        return $connection;
+        echo "The php code ran";
+    }
 }
+
+
+
 /*
 $sql = "INSERT INTO project3
 VALUES (4,'thefourth','wordssap','32696')";
