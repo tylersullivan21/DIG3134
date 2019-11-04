@@ -1,5 +1,6 @@
 <?php
  session_start();
+ include 'db-connection.php';
 ?>
 
 <!DOCTYPE html>
@@ -150,6 +151,11 @@ else {
 
     //this conditional checks if all flag variables are true or not, when true it will run the success redirect logic.
     if($isValidAddress === true && $isValidPhone === true && $isValidState === true && $isValidZip === true) {
+
+      //insert into db//
+      $insert = "INSERT INTO project3
+VALUES (4,'thefourth','wordssap','32696')";
+       
         redirectOnSuccess();
         /* SET SESSION VARIABLES INSTEAD OF USING COOKIES JUST FOR THE USERNAME, DONT STORE PASSWORD
         setcookie("username_cookie", "dig3134", time() + 120, "/");

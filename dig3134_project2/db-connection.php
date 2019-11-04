@@ -1,7 +1,7 @@
 <?php
-$username = "root";
-$password = "root";
-$dbname = "project3";
+$username = "ja240668";
+$password = "KumaJake2198!";
+$dbname = "ja240668";
 
 
 $connection = mysqli_connect("localhost", "$username", "$password", "$dbname") or die(mysql_error());
@@ -12,11 +12,13 @@ if (!$connection) {
 
     echo "The php code ran";
 }
+/*
 $sql = "INSERT INTO project3
-VALUES (3,'thirdtest','password','32632')";
+VALUES (4,'thefourth','wordssap','32696')";
 
 mysqli_query($connection, $sql) or die('Could not create table: ' . mysql_error());
 
 mysqli_close($connection);
+*/
 
 ?>
