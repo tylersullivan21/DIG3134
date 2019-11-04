@@ -4,7 +4,7 @@ session_start();
  echo "page is loaded :: ".isset($_SESSION);
  print_r($_SESSION);
 echo 'result:: '.$_SESSION['loggedin'];*/
-
+include 'db-connection.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
