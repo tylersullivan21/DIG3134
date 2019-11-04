@@ -8,7 +8,6 @@ function getConnection()
 
     $connection = mysqli_connect("localhost", "$username", "$password", "$dbname") or die(mysqli_error($connection));
 
-    define('mysqlconn',$connection);
 
     if (!$connection) {
         die("It did not run" . mysqli_connect_error());
