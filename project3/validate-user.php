@@ -14,6 +14,15 @@ if($_POST['username'] === 'dig3134'){
 }
 else
 */
+$select = "SELECT password FROM project3 WHERE username='".$_POST['username']."'";
+  
+$connection = getConnection();
+mysqli_query($connection, $select) or die('No matching records found' . mysqli_error($connection));
+mysqli_close($connection);
+
+/*
+echo mysql_result($result,0);
+*/
 
 if(isset($_POST) && $_POST['username'] === 'dig3134user' &&  $_POST['password']=== 'dig3134pass'){
     //set the cookie login state to true, store username and passsword and redirect to welcome page

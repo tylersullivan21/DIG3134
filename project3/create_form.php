@@ -155,17 +155,15 @@ else {
       $insert = "INSERT INTO project3 (username, password, zip) VALUES ('"
       .$user_entered_data["username"]
       ."','"
-      .$user_entered_data["password"]
+      .sha1($user_entered_data["password"])
       ."','"
       .$user_entered_data["zip-code"]
       ."')";
-
-      echo "::::::::::::::::::::::::::::::::::::::::::::::::: see this ". $insert." :: this is the query we are trying to execute";
       
       $connection = getConnection();
       mysqli_query($connection, $insert) or die('Could not insert into data: ' . mysqli_error($connection));
       mysqli_close($connection);
-      
+
         redirectOnSuccess();
         /* SET SESSION VARIABLES INSTEAD OF USING COOKIES JUST FOR THE USERNAME, DONT STORE PASSWORD
         setcookie("username_cookie", "dig3134", time() + 120, "/");
