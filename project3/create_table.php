@@ -1,11 +1,16 @@
 <?php
+include 'db-connection.php';
+$create_table ="CREATE TABLE IF NOT EXISTS project3 (
+    userid int NOT NULL AUTO_INCREMENT,
+    PRIMARY KEY(userid),
+    username varchar(255) NOT NULL,
+    password varchar(255) NOT NULL,
+    zip int NOT NULL
+);";
 
-$create_table ="CREATE TABLE project3 (
-    userid int IDENTITY(1,1) PRIMARY KEY,
-    LastName varchar(255) NOT NULL,
-    FirstName varchar(255),
-    Age int
-)";
+$connection = getConnection();
+mysqli_query($connection, $create_table) or die('Could not create your table ' . mysqli_error($connection));
+mysqli_close($connection);
 
 
 

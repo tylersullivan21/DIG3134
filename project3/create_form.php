@@ -1,6 +1,6 @@
 <?php
  session_start();
- include 'db-connection.php';
+ include 'create_table.php';
 ?>
 
 <!DOCTYPE html>
