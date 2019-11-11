@@ -4,7 +4,6 @@ session_start();
  echo "page is loaded :: ".isset($_SESSION);
  print_r($_SESSION);
 echo 'result:: '.$_SESSION['loggedin'];*/
-include 'create_table.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -44,23 +43,9 @@ $date = date('m/d/Y h:i:s a', time());
 $today = date("D"); 
 // USER LOGGED IN, ADD MARKUP FOR UNIQUE  VIEW
 if (isset($_SESSION['loggedin']) &&  $_SESSION['loggedin'] === 'tyler_true') {
-   echo 'if cond met:: logged in ='.$_SESSION['loggedin'];
+   
     echo '
-    <nav>
-    <ul class="nav d-flex justify-content-center align-items-center">
-     <li class="nav-item">
-       <a class="nav-link active" href="index.php">Home</a>
-     </li>
-     <li class="nav-item">
-       <a class="nav-link" href="inventory.php">Inventory</a>
-     </li>
-     <li class="nav-item">
-       <a class="nav-link" href="contact.html">Contact</a>
-     </li>
-     <button style="padding: 4px;" class="grid-area:logout;" onclick="logout()" name="logout">Logout </button>
-   </ul>
 
-   </nav>
     
     <link rel="stylesheet" href="css/logged-in.css">
     <p class="signed-in-header">'.$_COOKIE['username_cookie'] .', Use code SULLY for free shipping and 10% off your next purchase. This deal is valid as of ' .$date .'   </p>

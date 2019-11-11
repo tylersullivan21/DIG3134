@@ -170,9 +170,6 @@ else {
         setcookie("password_cookie", "dig3134pass", time() + 120, "/");
         setcookie("login_state", "true", time() + 120);*/
         header("refresh:5; ./index.php");
-        echo $_COOKIE["login_state"];
-        echo $_COOKIE["username_cookie"];
-        echo $_COOKIE["password_cookie"];
     }
     else{
 echo 'Please try again';
