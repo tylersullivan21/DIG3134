@@ -16,7 +16,7 @@ else
 if(isset($_POST))
 {
 $select = "SELECT password FROM project3 WHERE username='".$_POST['username']."'";
-  
+
 /* working on the password logic here*/
 $connection = getConnection();
 $result= mysqli_query($connection, $select) or die('No matching records found' . mysqli_error($connection));

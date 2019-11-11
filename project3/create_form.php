@@ -152,6 +152,8 @@ else {
     //this conditional checks if all flag variables are true or not, when true it will run the success redirect logic.
     if($isValidAddress === true && $isValidPhone === true && $isValidState === true && $isValidZip === true) {
       //insert into db//
+    
+          
       $insert = "INSERT INTO project3 (username, password, zip) VALUES ('"
       .$user_entered_data["username"]
       ."','"
@@ -170,6 +172,7 @@ else {
         setcookie("password_cookie", "dig3134pass", time() + 120, "/");
         setcookie("login_state", "true", time() + 120);*/
         header("refresh:5; ./index.php");
+
     }
     else{
 echo 'Please try again';
