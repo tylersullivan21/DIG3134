@@ -18,6 +18,7 @@ include 'create_table.php';
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+   
 </head>
 <body>
 <!--
@@ -52,7 +53,7 @@ if (isset($_SESSION['loggedin']) &&  $_SESSION['loggedin'] === 'tyler_true') {
        <a class="nav-link active" href="index.php">Home</a>
      </li>
      <li class="nav-item">
-       <a class="nav-link" href="inventory.php">Inventory</a>
+       <a class="nav-link" href="inventory.html">Inventory</a>
      </li>
      <li class="nav-item">
        <a class="nav-link" href="contact.html">Contact</a>
@@ -129,7 +130,7 @@ else {
        <a class="nav-link active" href="index.php">Home</a>
      </li>
      <li class="nav-item">
-       <a class="nav-link" href="inventory.html">Inventory</a>
+       <a class="nav-link" href="inventory.php">Inventory</a>
      </li>
      <li class="nav-item">
        <a class="nav-link" href="contact.html">Contact</a>

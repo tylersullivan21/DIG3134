@@ -4,6 +4,7 @@ session_start();
  echo "page is loaded :: ".isset($_SESSION);
  print_r($_SESSION);
 echo 'result:: '.$_SESSION['loggedin'];*/
+include 'create_table.php';
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -17,6 +18,7 @@ echo 'result:: '.$_SESSION['loggedin'];*/
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
+   
 </head>
 <body>
 <!--
@@ -43,65 +45,200 @@ $date = date('m/d/Y h:i:s a', time());
 $today = date("D"); 
 // USER LOGGED IN, ADD MARKUP FOR UNIQUE  VIEW
 if (isset($_SESSION['loggedin']) &&  $_SESSION['loggedin'] === 'tyler_true') {
-   
+   echo 'if cond met:: logged in ='.$_SESSION['loggedin'];
     echo '
+    <nav>
+    <ul class="nav d-flex justify-content-center align-items-center">
+     <li class="nav-item">
+       <a class="nav-link active" href="index.php">Home</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="inventory.php">Inventory</a>
+     </li>
+     <li class="nav-item">
+       <a class="nav-link" href="contact.html">Contact</a>
+     </li>
+     <button style="padding: 4px;" class="grid-area:logout;" onclick="logout()" name="logout">Logout </button>
+   </ul>
 
+   </nav>
     
     <link rel="stylesheet" href="css/logged-in.css">
     <p class="signed-in-header">'.$_COOKIE['username_cookie'] .', Use code SULLY for free shipping and 10% off your next purchase. This deal is valid as of ' .$date .'   </p>
-   
-   <div class="hero-img">
-   <img src="images/clothes-crop.png" alt="">
-   <figcaption>Photo by rawpixel.com from Pexels</figcaption>
-</div>
-   <section class="module1">
+    <main class="main-content">
+<h1>THE SIGNED IN VIEWWWWWWW</h1>
+            <div class="hero-img">
+<img src="images/inventory-header.png" alt="">
 
-   <h2 class="mod-header"> Hey there, <span>'. $_COOKIE['username_cookie']. '</span> Welcome back! <br></h2>
-   <h4 style="text-align:center; line-height: 3em;" >Check out these exclusive deals for being signed in!</h4>
-   <ul style="line-height:2em; padding: 2px 0;text-align:center;font-size: 18px">
-      <li class="markdown"> Cardigan sweater now <span style="color:red";> $31.50.</span> Was $34.99!  </li>
-      <li class="markdown" > Air Jordan 1 now <span style="color:red";> $269.99.</span> Was $299.99!</li>
-      <li class="markdown"> Cannon DSLR now <span style="color:red";> $810.00.</span> Was $899.99!</li>
-
-   </ul>
-
-</section>
-
-<main class="main-content">
-            <section class="icons">
-                <ul class="icons-list">
-                    <li class="left-list-item">
-                         <div class="icon-img"><img src="images/air-jordan-fashion-feet-2065695.jpg" alt="">
-                            <figcaption>Photo by AJ Nakasone from Pexels</figcaption>
-                        </div>
-                    <div class="icon-text">
-                        <h1 class="icon-heading"><a href="inventory.html">Shop Shoes</a></h1>
-                             <div class="icon-description">Search our best selection of shoes</div>
+            </div>
+<section class="shoe-section">
+            <h1 class="shoe-head">
+                Shoes
+            </h1>
+            <!--CARD 1 BEGINS HERE-->
+            <div class="shoe-cards">
+                <div class="card1">
+                    <img src="images/air-jordan-fashion-feet-2065695.jpg" alt="">
+                    <figcaption>Photo by AJ Nakasone from Pexels</figcaption>
+                    <div class="card1-text">
+                        <h5>Air jordan 1</h5>
+                        <p>This shoe is an ageless wonder</p>
+                        <span class="price">$299.99</span>
                     </div>
-                    </li>
+                </div>
+                <!--CARD 1 ENDS HERE-->
+                <div class="card2">
+                    <img src="images/air-jordan-fashion-feet-2065695.jpg" alt="">
+                    <figcaption>Photo by AJ Nakasone from Pexels</figcaption>
+                    <div class="card2-text">
+                        <h5>Air jordan 1</h5>
+                        <p>This shoe is an ageless wonder</p>
+                        <span class="price">$299.99</span>
+                    </div>
+                </div>
 
-                    <li class="center-list-item">
-                            <div class="icon-img"><img src="images/black-and-white-cameras-classic-1422220 (1).jpg" alt="">
-                                <figcaption>Photo by Free Creative Stuff from Pexels</figcaption>
-                            </div>
-                       <div class="icon-text">
-                        <h1 class="icon-heading"><a href="inventory.html">Shop Cameras</a></h1>
-                                <div class="icon-description">Check out our Cameras</div>
-                       </div>
-                       </li>
+                <div class="card3">
+                    <img src="images/air-jordan-fashion-feet-2065695.jpg" alt="">
+                    <figcaption>Photo by AJ Nakasone from Pexels</figcaption>
+                    <div class="card3-text">
+                        <h5>Air jordan 1</h5>
+                        <p>This shoe is an ageless wonder</p>
+                        <span class="price">$299.99</span>
+                    </div>
+                </div>
 
-                       <li class="right-list-item">
-                            <div class="icon-img"><img src="images/apparel-attire-blur-994517.jpg" alt="">
-                                <figcaption>Photo by Artem Beliaikin from Pexels</figcaption>
-                            </div>
-                       <div class="icon-text">
-                        <h1 class="icon-heading"><a href="inventory.html">Shop Clothes</a></h1>
-                                <div class="icon-description">Check out our clothes</div>
-                       </div>
-                       </li>
-                </ul>
-                
+                <div class="card4">
+                    <img src="images/air-jordan-fashion-feet-2065695.jpg" alt="">
+                    <figcaption>Photo by AJ Nakasone from Pexels</figcaption>
+                    <div class="card4-text">
+                        <h5>Air jordan 1</h5>
+                        <p>This shoe is an ageless wonder</p>
+                        <span class="price">$299.99</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="camera-section">
+            <h1 class="camera-head">Cameras</h1>
+             <!--CARD 1 BEGINS HERE-->
+            <div class="camera-cards">
+                <div class="card1">
+                    <img src="images/analogue-aperture-black-and-white-1203819.jpg" alt="">
+                    <figcaption>Photo by Alex Andrews from Pexels</figcaption>
+                    <div class="card1-text">
+                        <h5>Cannon DSLR</h5>
+                        <p>This camera is one of the best DSLRs on the market</p>
+                        <span class="price">$899.99</span>
+                    </div>
+                </div>
+                <!--CARD 1 ENDS HERE-->
+
+                    <!--CARD 2 BEGINS HERE-->
+          
+                <div class="card2">
+                        <img src="images/analogue-aperture-black-and-white-1203819.jpg" alt="">
+                        <figcaption>Photo by Alex Andrews from Pexels</figcaption>
+                    <div class="card2-text">
+                        <h5>Cannon DSLR</h5>
+                        <p>This camera is one of the best DSLRs on the market</p>
+                        <span class="price">$899.99</span>
+                 
+                </div>
+                </div>
+                <!--CARD 2 ENDS HERE-->
+
+                   <!--CARD 3 BEGINS HERE-->
+          
+                   <div class="card3">
+                        <img src="images/analogue-aperture-black-and-white-1203819.jpg" alt="">
+                        <figcaption>Photo by Alex Andrews from Pexels</figcaption>
+                    <div class="card3-text">
+                        <h5>Cannon DSLR</h5>
+                        <p>This camera is one of the best DSLRs on the market</p>
+                        <span class="price">$899.99</span>
+                 
+                </div>
+                </div>
+                <!--CARD 3 ENDS HERE-->
+
+                  <!--CARD 4 BEGINS HERE-->
+          
+                  <div class="card4">
+                        <img src="images/analogue-aperture-black-and-white-1203819.jpg" alt="">
+                        <figcaption>Photo by Alex Andrews from Pexels</figcaption>
+                    <div class="card4-text">
+                        <h5>Cannon DSLR</h5>
+                        <p>This camera is one of the best DSLRs on the market</p>
+                        <span class="price">$899.99</span>
+                 
+                </div>
+                </div>
+                <!--CARD 4 ENDS HERE-->
+
+            </div>
+
+        </section>
+<section class="clothes-section">
+            <h1 class="clothes-head">Clothes</h1>
+            <!--CARD 1 BEGINS HERE-->
+            <div class="clothes-cards">
+                <div class="card1">
+                    <img src="images/cardigan-clothes-sweater-45982.jpg" alt="">
+                    <figcaption>Photo by Dom J from Pexels</figcaption>
+                    <div class="card-body">
+                        <h5>Cardigan Sweater</h5>
+                        <p>The perfect sweater as cold weather approaches</p>
+                        <span class="price">$34.99</span>
+                    </div>
+                </div>
+                <!--CARD 1 ENDS HERE-->
+
+    <!--CARD 2 BEGINS HERE-->
+ 
+    <div class="card2">
+        <img src="images/cardigan-clothes-sweater-45982.jpg" alt="">
+        <figcaption>Photo by Dom J from Pexels</figcaption>
+        <div class="card-body">
+            <h5>Cardigan Sweater</h5>
+            <p>The perfect sweater as cold weather approaches</p>
+            <span class="price">$34.99</span>
+        </div>
+    </div>
+        <!--CARD 2 ENDS HERE-->
+
+        <!--CARD 3 BEGINS HERE-->
+  
+        <div class="card3">
+            <img src="images/cardigan-clothes-sweater-45982.jpg" alt="">
+            <figcaption>Photo by Dom J from Pexels</figcaption>
+                    <div class="card-body">
+                        <h5>Cardigan Sweater</h5>
+                        <p>The perfect sweater as cold weather approaches</p>
+                        <span class="price">$34.99</span>
+            </div>
+        </div>
+        <!--CARD 3 ENDS HERE-->
+
+         <!--CARD 4 BEGINS HERE-->
+         <div class="card4">
+            <img src="images/cardigan-clothes-sweater-45982.jpg" alt="">
+            <figcaption>Photo by Dom J from Pexels</figcaption>
+                    <div class="card-body">
+                        <h5>Cardigan Sweater</h5>
+                        <p>The perfect sweater as cold weather approaches</p>
+                        <span class="price">$34.99</span>
+            </div>
+        </div>
+        <!--CARD 4 ENDS HERE-->
+
+        
+     
+        </section>
+
+        
         </main>
+
     ';
 
     }
@@ -114,14 +251,13 @@ else {
        <a class="nav-link active" href="index.php">Home</a>
      </li>
      <li class="nav-item">
-       <a class="nav-link" href="inventory.html">Inventory</a>
+       <a class="nav-link" href="inventory.php">Inventory</a>
      </li>
      <li class="nav-item">
        <a class="nav-link" href="contact.html">Contact</a>
      </li>
    </ul>
    <form class="input-form" action="validate-user.php" method="post">
-
    <div class="username_input" class="form-field">
        <label for="username">Username</label>
        <input type="text" name="username" id="shoe-brand" placeholder="Username" required />
@@ -149,50 +285,182 @@ else {
   </div>
 </form >
 
+////////////new inventory content when signed out goes here
+<link rel="stylesheet" href="css/inventory.cssv=?1.0">
+<main class="main-content">
+
 <div class="hero-img">
-<img src="images/clothes-crop.png" alt="">
-<figcaption>Photo by rawpixel.com from Pexels</figcaption>
-            </div>
+<img src="images/inventory-header.png" alt="">
 
-            <section class="module1">
-                <h2 class="mod-header"> Welcome to <span>SullyShop.com!</span>  <br></h2>
-                <p>Hey there and welcome to Sully Shop! This store was formed by Tyler Sullivan in the fall of 2019 and carries things from shoes and tech all the way to clothes! Please scroll down and feel free to take a look at some of our always expanding inventory!</p>
-            </section>
-            <main class="main-content">
-            <section class="icons">
-                <ul class="icons-list">
-                    <li class="left-list-item">
-                         <div class="icon-img"><img src="images/air-jordan-fashion-feet-2065695.jpg" alt="">
-                            <figcaption>Photo by AJ Nakasone from Pexels</figcaption>
-                        </div>
-                    <div class="icon-text">
-                        <h1 class="icon-heading"><a href="inventory.html">Shop Shoes</a></h1>
-                             <div class="icon-description">Search our best selection of shoes</div>
-                    </div>
-                    </li>
+</div>
+<section class="shoe-section">
+<h1 class="shoe-head">
+    Shoes
+</h1>
+<!--CARD 1 BEGINS HERE-->
+<div class="shoe-cards">
+    <div class="card1">
+        <img src="images/air-jordan-fashion-feet-2065695.jpg" alt="">
+        <figcaption>Photo by AJ Nakasone from Pexels</figcaption>
+        <div class="card1-text">
+            <h5>Air jordan 1</h5>
+            <p>This shoe is an ageless wonder</p>
+            <span class="price">$299.99</span>
+        </div>
+    </div>
+    <!--CARD 1 ENDS HERE-->
+    <div class="card2">
+        <img src="images/air-jordan-fashion-feet-2065695.jpg" alt="">
+        <figcaption>Photo by AJ Nakasone from Pexels</figcaption>
+        <div class="card2-text">
+            <h5>Air jordan 1</h5>
+            <p>This shoe is an ageless wonder</p>
+            <span class="price">$299.99</span>
+        </div>
+    </div>
 
-                    <li class="center-list-item">
-                            <div class="icon-img"><img src="images/black-and-white-cameras-classic-1422220 (1).jpg" alt="">
-                                <figcaption>Photo by Free Creative Stuff from Pexels</figcaption>
-                            </div>
-                       <div class="icon-text">
-                        <h1 class="icon-heading"><a href="inventory.html">Shop Cameras</a></h1>
-                                <div class="icon-description">Check out our Cameras</div>
-                       </div>
-                       </li>
+    <div class="card3">
+        <img src="images/air-jordan-fashion-feet-2065695.jpg" alt="">
+        <figcaption>Photo by AJ Nakasone from Pexels</figcaption>
+        <div class="card3-text">
+            <h5>Air jordan 1</h5>
+            <p>This shoe is an ageless wonder</p>
+            <span class="price">$299.99</span>
+        </div>
+    </div>
 
-                       <li class="right-list-item">
-                            <div class="icon-img"><img src="images/apparel-attire-blur-994517.jpg" alt="">
-                                <figcaption>Photo by Artem Beliaikin from Pexels</figcaption>
-                            </div>
-                       <div class="icon-text">
-                        <h1 class="icon-heading"><a href="inventory.html">Shop Clothes</a></h1>
-                                <div class="icon-description">Check out our clothes</div>
-                       </div>
-                       </li>
-                </ul>
-                
-        </main>
+    <div class="card4">
+        <img src="images/air-jordan-fashion-feet-2065695.jpg" alt="">
+        <figcaption>Photo by AJ Nakasone from Pexels</figcaption>
+        <div class="card4-text">
+            <h5>Air jordan 1</h5>
+            <p>This shoe is an ageless wonder</p>
+            <span class="price">$299.99</span>
+        </div>
+    </div>
+</div>
+</section>
+
+<section class="camera-section">
+<h1 class="camera-head">Cameras</h1>
+ <!--CARD 1 BEGINS HERE-->
+<div class="camera-cards">
+    <div class="card1">
+        <img src="images/analogue-aperture-black-and-white-1203819.jpg" alt="">
+        <figcaption>Photo by Alex Andrews from Pexels</figcaption>
+        <div class="card1-text">
+            <h5>Cannon DSLR</h5>
+            <p>This camera is one of the best DSLRs on the market</p>
+            <span class="price">$899.99</span>
+        </div>
+    </div>
+    <!--CARD 1 ENDS HERE-->
+
+        <!--CARD 2 BEGINS HERE-->
+
+    <div class="card2">
+            <img src="images/analogue-aperture-black-and-white-1203819.jpg" alt="">
+            <figcaption>Photo by Alex Andrews from Pexels</figcaption>
+        <div class="card2-text">
+            <h5>Cannon DSLR</h5>
+            <p>This camera is one of the best DSLRs on the market</p>
+            <span class="price">$899.99</span>
+     
+    </div>
+    </div>
+    <!--CARD 2 ENDS HERE-->
+
+       <!--CARD 3 BEGINS HERE-->
+
+       <div class="card3">
+            <img src="images/analogue-aperture-black-and-white-1203819.jpg" alt="">
+            <figcaption>Photo by Alex Andrews from Pexels</figcaption>
+        <div class="card3-text">
+            <h5>Cannon DSLR</h5>
+            <p>This camera is one of the best DSLRs on the market</p>
+            <span class="price">$899.99</span>
+     
+    </div>
+    </div>
+    <!--CARD 3 ENDS HERE-->
+
+      <!--CARD 4 BEGINS HERE-->
+
+      <div class="card4">
+            <img src="images/analogue-aperture-black-and-white-1203819.jpg" alt="">
+            <figcaption>Photo by Alex Andrews from Pexels</figcaption>
+        <div class="card4-text">
+            <h5>Cannon DSLR</h5>
+            <p>This camera is one of the best DSLRs on the market</p>
+            <span class="price">$899.99</span>
+     
+    </div>
+    </div>
+    <!--CARD 4 ENDS HERE-->
+
+</div>
+
+</section>
+<section class="clothes-section">
+<h1 class="clothes-head">Clothes</h1>
+<!--CARD 1 BEGINS HERE-->
+<div class="clothes-cards">
+    <div class="card1">
+        <img src="images/cardigan-clothes-sweater-45982.jpg" alt="">
+        <figcaption>Photo by Dom J from Pexels</figcaption>
+        <div class="card-body">
+            <h5>Cardigan Sweater</h5>
+            <p>The perfect sweater as cold weather approaches</p>
+            <span class="price">$34.99</span>
+        </div>
+    </div>
+    <!--CARD 1 ENDS HERE-->
+
+<!--CARD 2 BEGINS HERE-->
+
+<div class="card2">
+<img src="images/cardigan-clothes-sweater-45982.jpg" alt="">
+<figcaption>Photo by Dom J from Pexels</figcaption>
+<div class="card-body">
+<h5>Cardigan Sweater</h5>
+<p>The perfect sweater as cold weather approaches</p>
+<span class="price">$34.99</span>
+</div>
+</div>
+<!--CARD 2 ENDS HERE-->
+
+<!--CARD 3 BEGINS HERE-->
+
+<div class="card3">
+<img src="images/cardigan-clothes-sweater-45982.jpg" alt="">
+<figcaption>Photo by Dom J from Pexels</figcaption>
+        <div class="card-body">
+            <h5>Cardigan Sweater</h5>
+            <p>The perfect sweater as cold weather approaches</p>
+            <span class="price">$34.99</span>
+</div>
+</div>
+<!--CARD 3 ENDS HERE-->
+
+<!--CARD 4 BEGINS HERE-->
+<div class="card4">
+<img src="images/cardigan-clothes-sweater-45982.jpg" alt="">
+<figcaption>Photo by Dom J from Pexels</figcaption>
+        <div class="card-body">
+            <h5>Cardigan Sweater</h5>
+            <p>The perfect sweater as cold weather approaches</p>
+            <span class="price">$34.99</span>
+</div>
+</div>
+<!--CARD 4 ENDS HERE-->
+
+
+
+</section>
+
+
+</main>
+
 ';
     }
 ?>
