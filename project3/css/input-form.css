@@ -25,7 +25,7 @@ span .markdown{
     color: red;
 }
 .nav-links{
-    grid-column: 2/3;
+    grid-column: 1/2;
    list-style-type:none ;
 }
 label{

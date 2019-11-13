@@ -7,8 +7,7 @@ echo "init value:: ".$_SESSION['loggedin'];
 $_SESSION['loggedin'] ='tyler_false';
 
 
-echo 'Logging out... value after destroy:: ' .$_SESSION['loggedin'];
-echo print_r($_SESSION);
+echo 'Logging out...';
 header("refresh:5; ./index.php"); 
 session_unset();
 

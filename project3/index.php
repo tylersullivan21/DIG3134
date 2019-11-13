@@ -45,7 +45,7 @@ $date = date('m/d/Y h:i:s a', time());
 $today = date("D"); 
 // USER LOGGED IN, ADD MARKUP FOR UNIQUE  VIEW
 if (isset($_SESSION['loggedin']) &&  $_SESSION['loggedin'] === 'tyler_true') {
-   echo 'if cond met:: logged in ='.$_SESSION['loggedin'];
+  
     echo '
     <nav>
     <ul class="nav d-flex justify-content-center align-items-center">
@@ -64,7 +64,7 @@ if (isset($_SESSION['loggedin']) &&  $_SESSION['loggedin'] === 'tyler_true') {
    </nav>
     
     <link rel="stylesheet" href="css/logged-in.css">
-    <p class="signed-in-header">'.$_COOKIE['username_cookie'] .', Use code SULLY for free shipping and 10% off your next purchase. This deal is valid as of ' .$date .'   </p>
+    <p class="signed-in-header"> Use code SULLY for free shipping and 10% off your next purchase. This deal is valid as of ' .$date .'   </p>
    
    <div class="hero-img">
    <img src="images/clothes-crop.png" alt="">
@@ -72,7 +72,7 @@ if (isset($_SESSION['loggedin']) &&  $_SESSION['loggedin'] === 'tyler_true') {
 </div>
    <section class="module1">
 
-   <h2 class="mod-header"> Hey there, <span>'. $_COOKIE['username_cookie']. '</span> Welcome back! <br></h2>
+   <h2 class="mod-header"> Hey there, Welcome back! <br></h2>
    <h4 style="text-align:center; line-height: 3em;" >Check out these exclusive deals for being signed in!</h4>
    <ul style="line-height:2em; padding: 2px 0;text-align:center;font-size: 18px">
       <li class="markdown"> Cardigan sweater now <span style="color:red";> $31.50.</span> Was $34.99!  </li>
@@ -97,7 +97,7 @@ if (isset($_SESSION['loggedin']) &&  $_SESSION['loggedin'] === 'tyler_true') {
                     </li>
 
                     <li class="center-list-item">
-                            <div class="icon-img"><img src="images/black-and-white-cameras-classic-1422220 (1).jpg" alt="">
+                            <div class="icon-img"><img src="images/kodak.jpg" alt="">
                                 <figcaption>Photo by Free Creative Stuff from Pexels</figcaption>
                             </div>
                        <div class="icon-text">
