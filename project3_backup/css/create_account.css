@@ -1,0 +1,106 @@
+html {
+    box-sizing: border-box;
+  }
+
+  *, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+ /* STYLES FOR BOOTSTRAP NAV GO HERE*/
+ /* STYLES FOR BOOTSTRAP NAV GO HERE*/
+ nav .nav{
+  background-color:#232f3e;
+  height: 50px;;
+}
+
+.nav-link{
+  color: white;
+  font-size: 22px;
+  padding: 0 25px;
+}
+
+  .contact-header{
+    position: absolute;
+    top: 30%;
+    left: 42%;
+    font-size: 40px;
+  }
+  
+  .hero-img img{
+      width: 100%;
+  }
+  
+  .error-messages{
+    color: red;
+  }
+  .message, .email{
+    margin-top: 10px;
+  }
+  
+  .form-grid{
+  width: 47em;
+  margin: 3em auto;
+  background-color: #456388;
+  padding: 2em;
+  }
+  .intro{
+     margin-bottom: 2em;
+     color: white;
+  }
+  .intro h1{
+    text-align: center;
+    margin-bottom: 0.6em;
+    color: white;
+  }
+  .intro h2{
+    text-align: center;
+    font-size: 1.3;
+    color: white;
+  }
+  .section-form label{
+    color: white;
+  }
+  input[type=text] {
+    height: 45px;
+  }
+  
+  input[type=text], textarea, input[type=password], input[type=tel], input[type=email]{
+    width: 100%;
+    margin-bottom: 1em;
+    font-size: .9em;
+    font-weight: 300;
+    padding: .5em 1em;
+    border: none;
+    color: #555555;
+    font-weight: 300;
+  }
+  input[type=button] {
+    cursor: pointer;
+    margin: 0;
+    padding: .5em 2em;
+    background: #636363;
+    border: none;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 400;
+  }
+
+  .footer{
+    grid-area: footer;
+    height: 100px;
+    width: 100%;
+    background: #232f3e;
+    display: grid;
+    }
+    .footer-text{
+        justify-content: center;
+        align-content: center;
+        text-align: center;
+        margin: auto;
+        color: white;
+    }
