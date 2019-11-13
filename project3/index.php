@@ -43,7 +43,11 @@ date_default_timezone_set('America/New_York');
 $date = date('m/d/Y h:i:s a', time());
 
 $today = date("D"); 
-// USER LOGGED IN, ADD MARKUP FOR UNIQUE  VIEW
+
+
+/***********************************************/
+//LOGGED IN VERSION HERE!!!!!!!!!!!!!//
+/********************************************* */
 if (isset($_SESSION['loggedin']) &&  $_SESSION['loggedin'] === 'tyler_true') {
   
     echo '
@@ -121,7 +125,9 @@ if (isset($_SESSION['loggedin']) &&  $_SESSION['loggedin'] === 'tyler_true') {
     ';
 
     }
-//no user logged in SHOW COMMON VIEW
+/***********************************************/
+//LOGGED OUT VERSION HERE!!!!!!!!!!!!!//
+/********************************************* */
 else {
      echo '
      <nav class="navbar">
@@ -130,7 +136,7 @@ else {
        <a class="nav-link active" href="index.php">Home</a>
      </li>
      <li class="nav-item">
-       <a class="nav-link" href="inventory.php">Inventory</a>
+       <a class="nav-link" href="inventory.html">Inventory</a>
      </li>
      <li class="nav-item">
        <a class="nav-link" href="contact.html">Contact</a>
