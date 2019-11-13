@@ -3,7 +3,7 @@
 function getConnection()
 {
     $username = "ja240668";
-    $password = "KumaJake2198!";
+    $password = "Password2121!";
     $dbname = "ja240668";
 
     $connection = mysqli_connect("localhost", "$username", "$password", "$dbname") or die(mysqli_error($connection));
