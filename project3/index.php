@@ -57,7 +57,7 @@ if (isset($_SESSION['loggedin']) &&  $_SESSION['loggedin'] === 'tyler_true') {
        <a class="nav-link active" href="index.php">Home</a>
      </li>
      <li class="nav-item">
-       <a class="nav-link" href="inventory.html">Inventory</a>
+       <a class="nav-link" href="inventory.php">Inventory</a>
      </li>
      <li class="nav-item">
        <a class="nav-link" href="contact.html">Contact</a>
@@ -82,7 +82,7 @@ if (isset($_SESSION['loggedin']) &&  $_SESSION['loggedin'] === 'tyler_true') {
       <li class="markdown"> Cardigan sweater now <span style="color:red";> $31.50.</span> Was $34.99!  </li>
       <li class="markdown" > Air Jordan 1 now <span style="color:red";> $269.99.</span> Was $299.99!</li>
       <li class="markdown"> Cannon DSLR now <span style="color:red";> $810.00.</span> Was $899.99!</li>
-
+      <li><p>Additionally these deals will be applied to the inventory page for you being signed in! Thanks for creating an account with us!</p></li>
    </ul>
 
 </section>
@@ -136,7 +136,7 @@ else {
        <a class="nav-link active" href="index.php">Home</a>
      </li>
      <li class="nav-item">
-       <a class="nav-link" href="inventory.html">Inventory</a>
+       <a class="nav-link" href="inventory.php">Inventory</a>
      </li>
      <li class="nav-item">
        <a class="nav-link" href="contact.html">Contact</a>
