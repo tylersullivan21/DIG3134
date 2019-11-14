@@ -12,6 +12,4 @@ $create_table ="CREATE TABLE IF NOT EXISTS project3 (
 mysqli_query($connection, $create_table) or die('Could not create your table ' . mysqli_error($connection));
 mysqli_close($connection);
 
-
-
 ?>

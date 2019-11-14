@@ -189,7 +189,6 @@ session_start();
         <div class="card-body">
             <h5>Cardigan Sweater</h5>
             <p>The perfect sweater as cold weather approaches</p>
-            <p>The perfect sweater as cold weather approaches</p>
             <span class="price">$35.00</span>
             <span class="reduced-price">$31.50</span>
         </div>
@@ -204,7 +203,6 @@ session_start();
                     <div class="card-body">
                         <h5>Cardigan Sweater</h5>
                         <p>The perfect sweater as cold weather approaches</p>
-                        <p>The perfect sweater as cold weather approaches</p>
                         <span class="price">$35.00</span>
                         <span class="reduced-price">$31.50</span>
             </div>
@@ -217,7 +215,6 @@ session_start();
             <figcaption>Photo by Dom J from Pexels</figcaption>
                     <div class="card-body">
                         <h5>Cardigan Sweater</h5>
-                        <p>The perfect sweater as cold weather approaches</p>
                         <p>The perfect sweater as cold weather approaches</p>
                         <span class="price">$35.00</span>
                         <span class="reduced-price">$31.50</span>
