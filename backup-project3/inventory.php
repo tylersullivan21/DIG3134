@@ -61,7 +61,7 @@ session_start();
                     <div class="card1-text">
                         <h5>Air jordan 1</h5>
                         <p>This shoe is an ageless wonder</p>
-                        <span class="price">$299.99</span>
+                        <span class="price">$300.00</span>
                         <span class="reduced-price">$270.00</span>
                     </div>
                 </div>
@@ -72,7 +72,7 @@ session_start();
                     <div class="card2-text">
                         <h5>Air jordan 1</h5>
                         <p>This shoe is an ageless wonder</p>
-                        <span class="price">$299.99</span>
+                        <span class="price">$300.00</span>
                         <span class="reduced-price">$270.00</span>
                     </div>
                 </div>
@@ -83,7 +83,7 @@ session_start();
                     <div class="card3-text">
                         <h5>Air jordan 1</h5>
                         <p>This shoe is an ageless wonder</p>
-                        <span class="price">$299.99</span>
+                        <span class="price">$300.00</span>
                         <span class="reduced-price">$270.00</span>
                     </div>
                 </div>
@@ -94,7 +94,7 @@ session_start();
                     <div class="card4-text">
                         <h5>Air jordan 1</h5>
                         <p>This shoe is an ageless wonder</p>
-                        <span class="price">$299.99</span>
+                        <span class="price">$300.00</span>
                         <span class="reduced-price">$270.00</span>
                     </div>
                 </div>
@@ -111,7 +111,8 @@ session_start();
                     <div class="card1-text">
                         <h5>Cannon DSLR</h5>
                         <p>This camera is one of the best DSLRs on the market</p>
-                        <span class="price">$899.99</span>
+                        <span class="price">$900.00</span>
+                        <span class="reduced-price">$810.00</span>
                     </div>
                 </div>
                 <!--CARD 1 ENDS HERE-->
@@ -124,7 +125,8 @@ session_start();
                     <div class="card2-text">
                         <h5>Cannon DSLR</h5>
                         <p>This camera is one of the best DSLRs on the market</p>
-                        <span class="price">$899.99</span>
+                        <span class="price">$900.00</span>
+                        <span class="reduced-price">$810.00</span>
                  
                 </div>
                 </div>
@@ -138,7 +140,8 @@ session_start();
                     <div class="card3-text">
                         <h5>Cannon DSLR</h5>
                         <p>This camera is one of the best DSLRs on the market</p>
-                        <span class="price">$899.99</span>
+                        <span class="price">$900.00</span>
+                        <span class="reduced-price">$810.00</span>
                  
                 </div>
                 </div>
@@ -152,7 +155,8 @@ session_start();
                     <div class="card4-text">
                         <h5>Cannon DSLR</h5>
                         <p>This camera is one of the best DSLRs on the market</p>
-                        <span class="price">$899.99</span>
+                        <span class="price">$900.00</span>
+                        <span class="reduced-price">$810.00</span>
                  
                 </div>
                 </div>
@@ -171,7 +175,8 @@ session_start();
                     <div class="card-body">
                         <h5>Cardigan Sweater</h5>
                         <p>The perfect sweater as cold weather approaches</p>
-                        <span class="price">$34.99</span>
+                        <span class="price">$35.00</span>
+                        <span class="reduced-price">$31.50</span>
                     </div>
                 </div>
                 <!--CARD 1 ENDS HERE-->
@@ -184,7 +189,8 @@ session_start();
         <div class="card-body">
             <h5>Cardigan Sweater</h5>
             <p>The perfect sweater as cold weather approaches</p>
-            <span class="price">$34.99</span>
+            <span class="price">$35.00</span>
+            <span class="reduced-price">$31.50</span>
         </div>
     </div>
         <!--CARD 2 ENDS HERE-->
@@ -197,7 +203,8 @@ session_start();
                     <div class="card-body">
                         <h5>Cardigan Sweater</h5>
                         <p>The perfect sweater as cold weather approaches</p>
-                        <span class="price">$34.99</span>
+                        <span class="price">$35.00</span>
+                        <span class="reduced-price">$31.50</span>
             </div>
         </div>
         <!--CARD 3 ENDS HERE-->
@@ -209,7 +216,8 @@ session_start();
                     <div class="card-body">
                         <h5>Cardigan Sweater</h5>
                         <p>The perfect sweater as cold weather approaches</p>
-                        <span class="price">$34.99</span>
+                        <span class="price">$35.00</span>
+                        <span class="reduced-price">$31.50</span>
             </div>
         </div>
         <!--CARD 4 ENDS HERE-->
@@ -283,7 +291,7 @@ session_start();
               <div class="card1-text">
                   <h5>Air jordan 1</h5>
                   <p>This shoe is an ageless wonder</p>
-                  <span class="price">$299.99</span>
+                  <span class="price">$300.00</span>
               </div>
           </div>
           <!--CARD 1 ENDS HERE-->
@@ -293,7 +301,7 @@ session_start();
               <div class="card2-text">
                   <h5>Air jordan 1</h5>
                   <p>This shoe is an ageless wonder</p>
-                  <span class="price">$299.99</span>
+                  <span class="price">$300.00</span>
               </div>
           </div>
 
@@ -303,7 +311,7 @@ session_start();
               <div class="card3-text">
                   <h5>Air jordan 1</h5>
                   <p>This shoe is an ageless wonder</p>
-                  <span class="price">$299.99</span>
+                  <span class="price">$300.00</span>
               </div>
           </div>
 
@@ -313,7 +321,7 @@ session_start();
               <div class="card4-text">
                   <h5>Air jordan 1</h5>
                   <p>This shoe is an ageless wonder</p>
-                  <span class="price">$299.99</span>
+                  <span class="price">$300.00</span>
               </div>
           </div>
       </div>
@@ -329,7 +337,7 @@ session_start();
               <div class="card1-text">
                   <h5>Cannon DSLR</h5>
                   <p>This camera is one of the best DSLRs on the market</p>
-                  <span class="price">$899.99</span>
+                  <span class="price">$900.00</span>
               </div>
           </div>
           <!--CARD 1 ENDS HERE-->
@@ -342,7 +350,7 @@ session_start();
               <div class="card2-text">
                   <h5>Cannon DSLR</h5>
                   <p>This camera is one of the best DSLRs on the market</p>
-                  <span class="price">$899.99</span>
+                  <span class="price">$900.00</span>
            
           </div>
           </div>
@@ -356,7 +364,7 @@ session_start();
               <div class="card3-text">
                   <h5>Cannon DSLR</h5>
                   <p>This camera is one of the best DSLRs on the market</p>
-                  <span class="price">$899.99</span>
+                  <span class="price">$900.00</span>
            
           </div>
           </div>
@@ -370,7 +378,7 @@ session_start();
               <div class="card4-text">
                   <h5>Cannon DSLR</h5>
                   <p>This camera is one of the best DSLRs on the market</p>
-                  <span class="price">$899.99</span>
+                  <span class="price">$900.00</span>
            
           </div>
           </div>
@@ -389,7 +397,7 @@ session_start();
               <div class="card-body">
                   <h5>Cardigan Sweater</h5>
                   <p>The perfect sweater as cold weather approaches</p>
-                  <span class="price">$34.99</span>
+                  <span class="price">$35.00</span>
               </div>
           </div>
           <!--CARD 1 ENDS HERE-->
@@ -402,7 +410,7 @@ session_start();
   <div class="card-body">
       <h5>Cardigan Sweater</h5>
       <p>The perfect sweater as cold weather approaches</p>
-      <span class="price">$34.99</span>
+      <span class="price">$35.00</span>
   </div>
 </div>
   <!--CARD 2 ENDS HERE-->
@@ -415,7 +423,7 @@ session_start();
               <div class="card-body">
                   <h5>Cardigan Sweater</h5>
                   <p>The perfect sweater as cold weather approaches</p>
-                  <span class="price">$34.99</span>
+                  <span class="price">$35.00</span>
       </div>
   </div>
   <!--CARD 3 ENDS HERE-->
@@ -427,7 +435,7 @@ session_start();
               <div class="card-body">
                   <h5>Cardigan Sweater</h5>
                   <p>The perfect sweater as cold weather approaches</p>
-                  <span class="price">$34.99</span>
+                  <span class="price">$35.00</span>
       </div>
   </div>
   <!--CARD 4 ENDS HERE-->

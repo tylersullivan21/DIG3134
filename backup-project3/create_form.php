@@ -1,6 +1,7 @@
 <?php
  session_start();
  include 'create_table.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -152,7 +153,7 @@ else {
     //this conditional checks if all flag variables are true or not, when true it will run the success redirect logic.
     if($isValidAddress === true && $isValidPhone === true && $isValidState === true && $isValidZip === true) {
       //insert into db//
-   /*
+      include 'db-connection.php';
           $username = mysqli_real_escape_string($connection, $user_entered_data["username"]);
           $password = mysqli_real_escape_string($connection, sha1($user_entered_data["password"]));
           $zip = mysqli_real_escape_string($connection, $user_entered_data["zip-code"]);
@@ -161,14 +162,15 @@ else {
           VALUES(?,?,?);";
           $stmt = mysqli_stmt_init($connection);
 
-          if(!mysqli_stmt_prepare($stmt, sql)){
+          if(!mysqli_stmt_prepare($stmt, $insert_into)){
             echo'SQL Error';
           }
           else{
             mysqli_stmt_bind_param($stmt, "sss", $username, $password, $zip);
+            mysqli_stmt_execute($stmt);
           }
-          */
-  
+         
+  /*
       $insert = "INSERT INTO project3 (username, password, zip) VALUES ('"
       .$user_entered_data["username"]
       ."','"
@@ -177,11 +179,12 @@ else {
       .$user_entered_data["zip-code"]
       ."')";
    
-      
-      
+      */
+      /*
       $connection = getConnection();
-    
+   
       mysqli_query($connection, $insert) or die('Could not insert into data: ' . mysqli_error($connection));
+       */
       mysqli_close($connection);
     
 

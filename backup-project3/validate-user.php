@@ -18,17 +18,13 @@ if(isset($_POST))
 $select = "SELECT password FROM project3 WHERE username='".$_POST['username']."'";
 
 /* working on the password logic here*/
-$connection = getConnection();
+
 $result= mysqli_query($connection, $select) or die('No matching records found' . mysqli_error($connection));
 mysqli_close($connection);
 $row = mysqli_fetch_row($result);
 print_r($row);
 if(sha1($_POST['password'])=== $row[0]){
-    //set the cookie login state to true, store username and passsword and redirect to welcome page
-    /*
-    $isValidUsername = true;
-    $isValidPassword = true; 
-    */
+  
     session_start();
    // echo session_id();
     $_SESSION['loggedin'] ='tyler_true';

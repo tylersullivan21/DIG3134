@@ -8,10 +8,8 @@ $create_table ="CREATE TABLE IF NOT EXISTS project3 (
     zip int NOT NULL
 );";
 
-$connection = getConnection();
+/*$connection = getConnection();*/
 mysqli_query($connection, $create_table) or die('Could not create your table ' . mysqli_error($connection));
 mysqli_close($connection);
-
-
 
 ?>

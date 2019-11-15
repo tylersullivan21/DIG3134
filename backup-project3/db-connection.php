@@ -1,7 +1,7 @@
 <?php
 
-function getConnection()
-{
+
+
     $username = "ja240668";
     $password = "Password2121!";
     $dbname = "ja240668";
@@ -15,7 +15,7 @@ function getConnection()
         return $connection;
         echo "The php code ran";
     }
-}
+
 
 
 
