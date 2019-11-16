@@ -14,7 +14,7 @@ session_start();
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/inventory.css?v=1.0">
+    <link rel="stylesheet" href="css/inventory.css">
 </head>
 <body>
 <!--THIS NAV IS NOW MADE WITH BOOTSTRAP INSTEAD OF SELF CREATED BASED ON FEEDBACK-->
@@ -246,7 +246,7 @@ session_start();
          <a class="nav-link" href="contact.php">Contact</a>
        </li>
      </ul>
-     <form class="input-form" action="validate-user.php" method="post">
+     <form class="input-form" action="validate_inventory.php" method="post">
   
      <div class="username_input" class="form-field">
          <label for="username">Username</label>
