@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,34 +18,16 @@
 </head>
 <body>
 <!--THIS NAV IS NOW MADE WITH BOOTSTRAP INSTEAD OF SELF CREATED BASED ON FEEDBACK-->
-<ul class="nav d-flex justify-content-center align-items-center">
-  <li class="nav-item">
-    <a class="nav-link " href="index.php">Home</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link active" href="inventory.php">Inventory</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="contact.html">Contact</a>
-  </li>
-</ul>
-<!--
-<div class="nav-wrapper">
-            <nav class="navbar">
 
-              
-                     <ul class="nav-links">
-                       <li class="nav-item"><a href="index.html">Home</a></li>
-                       <li class="nav-item"><a href="inventory.html">Inventory</a></li>
-                       <li class="nav-item"><a href="contact.html">Contact</a></li>
-                   </ul>
+<?php
+ if (isset($_SESSION['loggedin']) &&  $_SESSION['loggedin'] === 'tyler_true'){
+     include("header.php");
+ }
+ else{
+     include("header_loggedout.php");
+ }
 
-               
-
-                 </nav>
-                </div>
-
-                -->
+?>
                  <div class="wrapper">
         <main class="main-content" >
 
@@ -87,5 +72,15 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
     <script src="js/test.js"></script>
+
+
+    <script type="text/javascript"> 
+function logout() { 
+  console.log("logout button was pressed onclick function was triggered");
+
+   window.location = "logout3.php";
+    return true; 
+} 
+</script>
 </body>
 </html>

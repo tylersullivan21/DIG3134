@@ -1,14 +1,14 @@
-<head>
+
 <nav class="navbar">
     <ul class="nav-links d-flex justify-content-center align-items-center">
      <li class="nav-item">
        <a class="nav-link active" href="index.php">Home</a>
      </li>
      <li class="nav-item">
-       <a class="nav-link" href="inventory.html">Inventory</a>
+       <a class="nav-link" href="inventory.php">Inventory</a>
      </li>
      <li class="nav-item">
-       <a class="nav-link" href="contact.html">Contact</a>
+       <a class="nav-link" href="contact.php">Contact</a>
      </li>
    </ul>
    <form class="input-form" action="validate-user.php" method="post">
@@ -20,7 +20,7 @@
 
      <div class="password_input" class="form-field">
        <label for="password">Password</label>
-       <input type="password" name="password" id="shoe-brand" placeholder="Password" required />
+       <input type="password" namae="password" id="shoe-brand" placeholder="Password" required />
      </div>
      <div class="submit-btn" class="form-field">
        <label for="submit"></label>
@@ -28,5 +28,17 @@
      </div>
 </form>
    </nav>
-   </head>
+   <link rel="stylesheet" href="css/input-form.css?v=1.0">
+  
+  <form action="create_form.php" class="create-account-content">
+  
+  <p class="tagline">Need an account?</p>
+
+  <div class="create">
+  <label for="submit"></label>
+  <input class="create-btn" type="submit" value="Create Account" name="submit" />
+  </div>
+</form >
+
+
 
