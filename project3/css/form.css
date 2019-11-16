@@ -113,9 +113,16 @@ span{
 .message, .email{
   margin-top: 10px;
 }
+.message{
+  width: 100%;
+}
+.email{
+  width: 100%;
+}
 
 .section-form{
 width: 37em;
+display: grid;
 margin: 3em auto;
 background-color: #456388;
 padding: 2em;
