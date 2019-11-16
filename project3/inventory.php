@@ -38,6 +38,7 @@ session_start();
        <li class="nav-item">
          <a class="nav-link" href="contact.html">Contact</a>
        </li>
+       <button style="padding: 4px;" class="grid-area:logout;" onclick="logout()" name="logout">Logout </button>
      </ul>
   
      </nav>
@@ -473,6 +474,16 @@ session_start();
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
     </script>
     <script src="js/test.js"></script>
+
+    <script type="text/javascript"> 
+function logout() { 
+  console.log("logout button was pressed onclick function was triggered");
+
+   window.location = "logout2.php";
+    return true; 
+} 
+</script>
+
 </body>
 
 
