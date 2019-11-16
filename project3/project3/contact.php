@@ -38,13 +38,18 @@ session_start();
 <img src="images/phones-header.png" alt="">
     </div>
 
-    <section class="module1">
-      <h2 class="mod-header">Want to know more about our products?</h2>
-      <p>Please give us your email and send us a message on what it is that you would like to know more about!</p>
+    <section class="module1">A brief hisotry on Sully Shop</h2>
+      <p>Sully Shop was founded by James Sullivan in the Fall of 2019. James' Goals were to simple create a shop that offers many various products such as Shoes, Cameras, and Tech!</p>
 
   </section>
-   
 
+  <section class="module2">
+  <h4>Main Office: Gainesville, Flordia</h4>
+  <p>Phone: 123-123-1243</p>
+  <p>Email: james@example.com</p>
+  </section>
+   
+<!--
 <form class="section-form" action="form.php" method="GET">
   <div class="intro">
     <h1>Want to get in touch?</h1>
@@ -57,6 +62,7 @@ session_start();
   <input type="submit" name="submit-button" value="Submit">
 
 </form>
+-->
 
         </main>
         <footer class="footer">
