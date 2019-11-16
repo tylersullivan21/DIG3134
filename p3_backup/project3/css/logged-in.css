@@ -1,0 +1,22 @@
+.input-form{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.signed-in-header{
+    margin: auto auto;
+    background-color: #fffdd0;
+    height: 40px;
+}
+
+
+.price{
+    color: black;
+    text-decoration: line-through;
+  }
+  
+  .reduced-price{
+    color: red;
+    padding: 0;
+    margin: 0;
+  }
