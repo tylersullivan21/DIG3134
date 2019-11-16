@@ -1,4 +1,7 @@
+<?php
 
+include"db-connection.php";
+?>
 <nav class="navbar">
     <ul class="nav-links d-flex justify-content-center align-items-center">
      <li class="nav-item">
@@ -11,7 +14,7 @@
        <a class="nav-link" href="contact.php">Contact</a>
      </li>
    </ul>
-   <form class="input-form" action="validate_inventory.php" method="post">
+   <form class="input-form" action="validate_contact.php" method="post">
   
      <div class="username_input" class="form-field">
          <label for="username">Username</label>
