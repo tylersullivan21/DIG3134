@@ -14,16 +14,17 @@ session_start();
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/main.css">
     
-<link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/form.css">
 
 </head>
 <body>
 <!--THIS NAV IS NOW MADE WITH BOOTSTRAP INSTEAD OF SELF CREATED BASED ON FEEDBACK-->
 
 <?php
+
  if (isset($_SESSION['loggedin']) &&  $_SESSION['loggedin'] === 'tyler_true'){
      include("header.php");
-     include("css/logged-in.css");
+     
  }
  else{
      include("header_loggedout.php");

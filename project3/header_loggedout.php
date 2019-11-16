@@ -11,22 +11,22 @@
        <a class="nav-link" href="contact.php">Contact</a>
      </li>
    </ul>
-   <form class="input-form" action="validate-user.php" method="post">
-
-   <div class="username_input" class="form-field">
-       <label for="username">Username</label>
-       <input type="text" name="username" id="shoe-brand" placeholder="Username" required />
-     </div>
-
-     <div class="password_input" class="form-field">
-       <label for="password">Password</label>
-       <input type="password" namae="password" id="shoe-brand" placeholder="Password" required />
-     </div>
-     <div class="submit-btn" class="form-field">
-       <label for="submit"></label>
-       <input style="padding: 4px; width: 65px;" class="submit-button" type="submit" value="Submit" name="submit" />
-     </div>
-</form>
+   <form class="input-form" action="validate_inventory.php" method="post">
+  
+     <div class="username_input" class="form-field">
+         <label for="username">Username</label>
+         <input type="text" name="username" id="shoe-brand" placeholder="Username" required />
+       </div>
+  
+       <div class="password_input" class="form-field">
+         <label for="password">Password</label>
+         <input type="password" name="password" id="shoe-brand" placeholder="Password" required />
+       </div>
+       <div class="submit-btn" class="form-field">
+         <label for="submit"></label>
+         <input style="padding: 4px; width: 65px;" class="submit-button" type="submit" value="Submit" name="submit" />
+       </div>
+  </form>
    </nav>
    <link rel="stylesheet" href="css/input-form.css?v=1.0">
   
