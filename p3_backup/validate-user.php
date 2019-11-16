@@ -22,7 +22,6 @@ $select = "SELECT password FROM project3 WHERE username='".$_POST['username']."'
 $result= mysqli_query($connection, $select) or die('No matching records found' . mysqli_error($connection));
 mysqli_close($connection);
 $row = mysqli_fetch_row($result);
-print_r($row);
 if(sha1($_POST['password'])=== $row[0]){
   
     session_start();
