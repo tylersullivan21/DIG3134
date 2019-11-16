@@ -37,16 +37,38 @@ session_start();
     <div class="hero-img">
 <img src="images/phones-header.png" alt="">
     </div>
+   
 
-    <section class="module1">A brief hisotry on Sully Shop</h2>
-      <p>Sully Shop was founded by James Sullivan in the Fall of 2019. James' Goals were to simple create a shop that offers many various products such as Shoes, Cameras, and Tech!</p>
-
+    <section style="text-align:center;" class="module1"><h4>Contact Us @ Sully Shop!</h4>
+      <p>Sully Shop Strives every day to bring its customers the best service/selection to those no matter where they are!</p>
+      <p>Our current In store locations can be found in the US, Japan, and Korea, and we are expanding to locations near you!</p>
+    <p>Check down below to find the closest Store near you!</p>
   </section>
 
+<section class="locations">
+<h4 style="text-align: center; margin-top: 12%" >Our Global Locations!</h4>
+</section>
+
   <section class="module2">
-  <h4>Main Office: Gainesville, Flordia</h4>
+  <article class="us">
+  <h5>United States</h5>
+  <p>4343 Example Lane, 78439</p>
   <p>Phone: 123-123-1243</p>
-  <p>Email: james@example.com</p>
+  <p>Email: sullyshopusa@example.com</p>
+  </article>
+
+  <article class="japan">
+  <h5>Japan</h5>
+  <p>4343 Example Lane, 78439</p>
+  <p>Phone: 123-123-1243</p>
+  <p>Email: sullyshopjapan@example.com</p>
+  </article>
+  <article class="korea">
+  <h5>Korea</h5>
+  <p>4343 Example Lane, 78439</p>
+  <p>Phone: 123-123-1243</p>
+  <p>Email: sullyshopkorea@example.com</p>
+  </article>
   </section>
    
 <!--
