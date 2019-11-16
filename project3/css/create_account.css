@@ -65,6 +65,9 @@ html {
   .section-form label{
     color: white;
   }
+  label{
+    color: white;
+  }
   input[type=text] {
     height: 45px;
   }
