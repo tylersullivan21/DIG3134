@@ -18,10 +18,7 @@ html {
   }
 
 /* STYLES FOR BOOTSTRAP NAV GO HERE*/
-.nav{
-  background-color:#232f3e;
-  height: 50px;;
-}
+
 
 
 /*
@@ -258,7 +255,8 @@ height: 80px;
     grid-area: footer-form-text;
     grid-column: 2/3;
     color: white;
-  }.profile-form{
+  }
+  /*.profile-form{
     width: 37em;
     margin: 3em auto;
     background-color: #456388;
@@ -284,6 +282,8 @@ height: 80px;
     .section-form label{
       color: white;
     }
+    
+    /*
     input[type=text] {
       height: 45px;
     }
@@ -308,6 +308,7 @@ height: 80px;
       font-size: 1em;
       font-weight: 400;
     }
+    */
     
   .footer-text{
 
