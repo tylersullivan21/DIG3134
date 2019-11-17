@@ -171,6 +171,7 @@ else {
           }
          
   /*
+  working logic before implementing prepared statements for my unique element.
       $insert = "INSERT INTO project3 (username, password, zip) VALUES ('"
       .$user_entered_data["username"]
       ."','"

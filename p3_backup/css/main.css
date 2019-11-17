@@ -24,7 +24,9 @@ html {
       font-size: 22px;
       padding: 0 25px;
   }
-
+  .price-before{
+    color: black!important;
+}
   /*
   .nav-wrapper{
     background-color: #232f3e;

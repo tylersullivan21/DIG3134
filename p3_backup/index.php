@@ -79,9 +79,9 @@ if (isset($_SESSION['loggedin']) &&  $_SESSION['loggedin'] === 'tyler_true') {
    <h2 class="mod-header"> Hey there, Welcome back! <br></h2>
    <h4 style="text-align:center; line-height: 3em;" >Check out these exclusive deals for being signed in!</h4>
    <ul style="line-height:2em; padding: 2px 0;text-align:center;font-size: 18px">
-      <li class="markdown"> Cardigan sweater now <span style="color:red";> $31.50.</span> Was $34.99!  </li>
-      <li class="markdown" > Air Jordan 1 now <span style="color:red";> $269.99.</span> Was $299.99!</li>
-      <li class="markdown"> Cannon DSLR now <span style="color:red";> $810.00.</span> Was $899.99!</li>
+      <li class="markdown"> Cardigan sweater now <span style="color:red";> $31.50.</span> Was $35.00!  </li>
+      <li class="markdown" > Air Jordan 1 now <span style="color:red";> $269.99.</span> Was $300.00!</li>
+      <li class="markdown"> Cannon DSLR now <span style="color:red";> $810.00.</span> Was $900.00!</li>
       <li><p style="font-size:10px;">*Additionally these deals will be applied to the inventory page for you being signed in! Thanks for creating an account with us!*</p></li>
    </ul>
 
