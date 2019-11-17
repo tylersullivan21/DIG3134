@@ -46,25 +46,25 @@ session_start();
   </section>
 
 <section class="locations">
-<h4 style="text-align: center; margin-top: 12%" >Our Global Locations!</h4>
+<h4 style="text-align: center; margin-top: 10%" >Our Global Locations!</h4>
 </section>
 
   <section class="module2">
   <article class="us">
-  <h5>United States</h5>
+  <h4>United States</h4>
   <p>4343 Example Lane, 78439</p>
   <p>Phone: 123-123-1243</p>
   <p>Email: sullyshopusa@example.com</p>
   </article>
 
   <article class="japan">
-  <h5>Japan</h5>
+  <h4>Japan</h4>
   <p>4343 Example Lane, 78439</p>
   <p>Phone: 123-123-1243</p>
   <p>Email: sullyshopjapan@example.com</p>
   </article>
   <article class="korea">
-  <h5>Korea</h5>
+  <h4>Korea</h4>
   <p>4343 Example Lane, 78439</p>
   <p>Phone: 123-123-1243</p>
   <p>Email: sullyshopkorea@example.com</p>
